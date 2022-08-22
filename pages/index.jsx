@@ -16,7 +16,6 @@ const Home = () => {
         <title>NiagaHoster Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
       <Header />
       <Domain/>
       <Layanan/>

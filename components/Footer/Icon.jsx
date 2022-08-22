@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Icon = () => {
   return (
-    <div className='text-white grid grid-cols-3 items-center ml-5 mt-8 gap-6 justify-items-center px-[140px] md:px-[240px] md:mr-[120px] lg:px-0 lg:mr-[65px] lg:ml-0 ' >
+    <div className='text-white grid grid-cols-3 items-center ml-5 mt-8 gap-6 justify-items-center px-[140px]  md:mr-[120px] lg:px-0 lg:mr-[65px] lg:ml-0 ' >
       
      
       <FiFacebook  className=' p-3 rounded-full bg-slate-600 text-5xl hover:bg-yellow-600 ease-in duration-[400ms] cursor-pointer '/>

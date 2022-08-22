@@ -6,12 +6,12 @@ const CardProductStatis = () => {
         <div className='md:grid md:grid-cols-2 mt-[60px] md:justify-items-center  md:gap-2 md:px-[85px] lg:grid-cols-3 lg:gap-8 lg:px-[60px]'>
                 {/* card1 */}
                 <div className=" mx-8 md:mx-0 mt-10 border mr-[110px] shadow-2xl rounded-2xl overflow-hidden h-[615px]  md:mr-1 md:h-[555px] lg:h-[510px] ">
-                    <h1 className='bg-[#01c0a6] text-white font-semibold text-xl text-center p-3' >All-Time Best Seller Product</h1>
+                    <h1 className='bg-[#01c0a6] text-white font-semibold text-xl text-center p-3 ' >All-Time Best Seller Product</h1>
                     <div className='flex items-center gap-6 ml-8'>
                         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-promo-hosting-1654235588.webp" className=" w-[57.3px] h-[60px] mt-[55px] md:mt-8 "  />
                        <div className='pr-[70px] md:pr-10 '>
                        <h1 className='text-xl
-                         font-[640]  text-slate-600 mt-10 md:mt-5 '>Unlimited Hosting Paket Personal</h1>
+                         font-[640] font-hoster text-slate-600 mt-10 md:mt-5 '>Unlimited Hosting Paket Personal</h1>
                        </div>
                     </div>
                     <div className='lg:flex lg:items-center lg:gap-2'>
@@ -22,10 +22,10 @@ const CardProductStatis = () => {
                     
                     <div className='flex items-center gap-3 ml-8 bg-[#e0efff] mr-[173px] px-3 mt-2 rounded-[4px] py-2 lg:mr-0 lg:mt-8 lg:ml-0 '>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-price-tag-1654247027.webp"  className="object-cover w-3" />
-                        <p className='text-xs font-semibold text-blue-600 '>Diskon S.D 75%</p>
+                        <p className='text-xs font-semibold text-[#0057B2] '>Diskon S.D 75%</p>
                     </div>
                     </div>
-                    <p className='ml-8 mt-5 leading-7 text-slate-400 text-sm pr-[110px] md:pr-[60px] '>Layanan hosting terpopuler dengan jaminan uptime hingga 99.9%. Performa website aman, dan selalu aktif.</p>
+                    <p className='ml-8 mt-5 leading-7 text-[#7F8895] text-sm pr-[110px] md:pr-[60px] '>Layanan hosting terpopuler dengan jaminan uptime hingga 99.9%. Performa website aman, dan selalu aktif.</p>
 
                     <h3 className='ml-8 mt-8 text-xs text-slate-500 font-medium'>Mulai dari</h3>
                     <h1 className='ml-8 mt-2 font-semibold text-lg'><span className='text-[#ff9800] text-2xl font-semibold'>Rp 24.900</span>/bulan</h1>
@@ -42,7 +42,7 @@ const CardProductStatis = () => {
                         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-cloud-hosting-1654237451.webp" className=" w-[57.3px] h-[60px] mt-[40px] md:mt-2"  />
                         <div className='pr-[70px]'>
                         <h1 className='text-xl
-                         font-[645]  text-slate-600 mt-6 md:mt-2'>Cloud Hosting Paket Premium</h1>
+                         font-[645] font-hoster text-slate-600 mt-6 md:mt-2'>Cloud Hosting Paket Premium</h1>
                         </div>
                     </div>
                     <div className='lg:flex lg:items-center lg:gap-2' >
@@ -52,12 +52,12 @@ const CardProductStatis = () => {
                     </div>
                     <div className='flex items-center gap-3 ml-8 bg-[#e0efff] mr-[165px] px-3 mt-2 rounded-[4px] py-2 lg:mr-0 lg:ml-0 lg:mt-8  '>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-price-tag-1654247027.webp" className="object-cover w-3" />
-                        <p className='text-xs font-semibold text-blue-600'>Diskon S.D 58%</p>
+                        <p className='text-xs font-semibold text-[#0057B2]'>Diskon S.D 58%</p>
                     </div>
                     </div>
-                    <p className='ml-8 mt-5 leading-7 text-slate-400 text-sm pr-[59px]  md:pr-4 '>Layanan hosting dengan dedicated resource terbaik. Paling sesuai untuk website skala besar Anda.</p>
+                    <p className='ml-8 mt-5 leading-7 text-[#7F8895] text-sm pr-[59px]  md:pr-4 '>Layanan hosting dengan dedicated resource terbaik. Paling sesuai untuk website skala besar Anda.</p>
 
-                    <h3 className=' md:mt-[38px] ml-8 mt-8 text-xs text-slate-500 font-medium'>Mulai dari</h3>
+                    <h3 className=' md:mt-[38px] ml-8 mt-8 text-xs text-[#7F8895] font-medium'>Mulai dari</h3>
                     <h1 className='ml-8 mt-2 font-semibold text-lg'><span className='text-[#ff9800] text-2xl font-semibold'>Rp 249.900</span> /bulan</h1>
                     <div className='px-8 '>
                     <button className='bg-[#ff9800] rounded-full text-white w-full py-3  mt-7 shadow-md  shadow-yellow-100 font-medium hover:bg-yellow-600 ease-in duration-[400ms] '>
@@ -71,7 +71,7 @@ const CardProductStatis = () => {
                     <div className='flex items-center ml-7  gap-6'>
                         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-promo-hosting-1654235588.webp" className=" w-[57.3px] h-[60px] mt-[50px] md:mt-8"  />
                         <h1 className='text-xl
-                         font-[640]  text-slate-600 mr-[70px]  mt-8 '>Unlimited Hosting Paket Bayi</h1>
+                         font-[640] font-hoster text-slate-600 mr-[70px]  mt-8 '>Unlimited Hosting Paket Bayi</h1>
                     </div>
                     <div className='lg:flex lg:items-center lg:gap-2'>
                     <div className='flex items-center gap-3 ml-8 bg-[#FFE082] mr-[182px] px-3 mt-10 rounded-[4px] py-2 md:mt-8 md:mr-[205px] lg:mr-0'>
@@ -83,9 +83,9 @@ const CardProductStatis = () => {
                         <p className='text-xs font-medium text-[#00897B]'>Paket Termurah</p>
                     </div>
                     </div>
-                    <p className='ml-8 mt-5 leading-7 text-slate-400 text-sm pr-[59px]   md:pr-10   '>Layanan hosting termurah dari Niagahoster. Mudah digunakan oleh semua orang bahkan untuk pemula.</p>
+                    <p className='ml-8 mt-5 leading-7 text-[#7F8895] text-sm pr-[59px]   md:pr-10   '>Layanan hosting termurah dari Niagahoster. Mudah digunakan oleh semua orang bahkan untuk pemula.</p>
 
-                    <h3 className='ml-8 mt-8 text-xs text-slate-500 font-medium'>Mulai dari</h3>
+                    <h3 className='ml-8 mt-8 text-xs text-[#7F8895] font-medium'>Mulai dari</h3>
                     <h1 className='ml-8 mt-2 font-semibold text-lg'><span className='text-[#ff9800] text-2xl font-semibold'>Rp 9.900</span> /bulan</h1>
                     <div className='px-8'>
                     <button className='bg-[#ff9800] rounded-full text-white py-3 w-full mt-5 shadow-md  shadow-yellow-100 font-medium hover:bg-yellow-600 ease-in duration-[400ms] '>
@@ -99,7 +99,7 @@ const CardProductStatis = () => {
                     <div className='flex items-center ml-7  gap-5'>
                         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-cloud-vps-1654237629.webp" className="w-[57.3px] h-[60px] mt-9 md:mt-7"  />
                         <h1 className='text-xl
-                         font-[640]  text-slate-600 mt-4 pr-[60px]'>Cloud VPS Hosting</h1>
+                         font-[640] font-hoster text-slate-600 mt-4 pr-[60px]'>Cloud VPS Hosting</h1>
                     </div>
                     <div className='lg:flex lg:items-center lg:gap-2'>
                     <div className='flex items-center gap-3 ml-8 bg-[#FBB2B2] mr-[220px] px-3 mt-10 rounded-[4PX] py-2 md:mt-6 md:mr-[240px] lg:mr-0'>
@@ -108,10 +108,10 @@ const CardProductStatis = () => {
                     </div>
                     <div className='flex items-center gap-3 ml-8 bg-[#e0efff] mr-[156px] px-3 mt-2 rounded-[4px] py-2 md:mr-[175px] lg:mr-0 lg:ml-0 lg:mt-6'>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-price-tag-1654247027.webp"  className="object-cover w-3" />
-                        <p className='text-xs font-semibold text-blue-600'>Diskon S.D 28.6%</p>
+                        <p className='text-xs font-semibold text-[#0057B2]'>Diskon S.D 28.6%</p>
                     </div>
                     </div>
-                    <p className='ml-8 mt-5 leading-7 text-slate-400 text-sm pr-[30px]'>Kelola server kini jauh lebih fleksibel sesuai kebutuhan Anda. Dukungan fitur terlengkap dan termurah hanya di Niagahoster.</p>
+                    <p className='ml-8 mt-5 leading-7 text-[#7F8895] text-sm pr-[30px]'>Kelola server kini jauh lebih fleksibel sesuai kebutuhan Anda. Dukungan fitur terlengkap dan termurah hanya di Niagahoster.</p>
 
                     <h3 className='ml-8 mt-8 text-xs text-slate-500 md:mt-6 font-medium'>Mulai dari</h3>
                     <h1 className='ml-8 mt-2 font-semibold text-lg'><span className='text-[#ff9800] text-2xl font-semibold'>Rp 99.900</span> /bulan</h1>
@@ -136,12 +136,12 @@ const CardProductStatis = () => {
                     </div>
                     <div className='flex items-center gap-3 ml-8 bg-[#e0efff] mr-[172px] px-3 mt-2 rounded-[4px] py-2 md:mr-[197px] lg:mr-0 lg:ml-0 lg:mt-6 '>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-price-tag-1654247027.webp"  className="object-cover w-3" />
-                        <p className='text-xs font-medium text-blue-600'>Instan Product</p>
+                        <p className='text-xs font-medium text-[#0057B2]'>Instan Product</p>
                     </div>
                     </div>
-                    <p className='ml-8 mt-5 leading-7 text-slate-400 text-sm pr-8'>Dapatkan website yang siap online dengan variasi tema website yang beragam sesuai dengan kebutuhanmu.</p>
+                    <p className='ml-8 mt-5 leading-7 text-[#7F8895] text-sm pr-8'>Dapatkan website yang siap online dengan variasi tema website yang beragam sesuai dengan kebutuhanmu.</p>
 
-                    <h3 className='ml-8 mt-8 text-xs text-slate-500 font-medium lg:mt-4 '>Mulai dari</h3>
+                    <h3 className='ml-8 mt-8 text-xs text-[#7F8895] font-medium lg:mt-4 '>Mulai dari</h3>
                     <h1 className='ml-8 mt-2 font-semibold text-lg'><span className='text-[#ff9800] text-2xl font-semibold'>Rp 29.175</span> /bulan</h1>
                     <div className='px-8'>
                     <button className='bg-[#ff9800] rounded-full text-white py-3 mt-8 w-full shadow-md  shadow-yellow-100 font-medium hover:bg-yellow-600 ease-in duration-[400ms] '>
@@ -155,7 +155,7 @@ const CardProductStatis = () => {
                     <div className='flex items-center ml-7  gap-6'>
                         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-simple-wordpress-1654237709.webp" className="w-[57.3px] h-[60px] mt-10 md:mt-8"  />
                         <h1 className='text-2xl
-                         font-semibold  text-slate-600 mr-10 mt-5 '>Simple WordPress</h1>
+                         font-semibold  text-slate-600  mr-10 mt-5 '>Simple WordPress</h1>
                     </div>
                     <div className='lg:flex lg:items-center lg:gap-2'>
                     <div className='flex items-center gap-3 ml-8 bg-[#ADEBE3] mr-[205px] px-3 mt-8 rounded-[4px] py-2 md:mt-[25px] md:mr-[230px] lg:mr-0 '>

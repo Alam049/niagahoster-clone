@@ -5,7 +5,18 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sm': '512px',
+        'xl': '1200px',
+        '2xl': '1500px',
+        '3xl': '1800px',
+        '4xl': '1920px',
+      },
+    },
+    fontFamily: {
+      hoster: ["Nunito Sans", "sans-serif"],
+    }
   },
   plugins: [],
 }

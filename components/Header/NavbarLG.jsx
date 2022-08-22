@@ -7,7 +7,7 @@ const NavbarLG = () => {
 
 
   return (
-    <div className='flex gap-[50px] mx-[60px]'>
+    <div className='flex gap-[50px] mx-[60px] 2xl:mx-0 2xl:ml-[140px] 3xl:ml-[280px] xl:mx-0 xl:pl-5'>
         <div className=''>
         <button className='peer text-white font-semibold ' >Hosting</button>
         <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] absolute'></div>

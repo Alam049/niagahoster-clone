@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         
        
-        <div className='px-4 mt-7  lg:ml-[580px] lg:mt-0'>
+        <div className='px-4 mt-7  lg:ml-[480px] lg:mt-0'>
           <div className='lg:mt-[-130px] lg:mb-[100px]'>
           <h1 className='text-white font-medium text-lg '>Newsletter</h1>
           <form className='md:flex md:items-center'>

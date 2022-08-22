@@ -19,32 +19,32 @@ const Header = () => {
     const setTimePromo = {hours: 8, minutes: 39, seconds: 40}
 
   return (
-    <div>
+    <div className=''>
         
-   <div className='bg-[#c52544]'>
+   <div className='bg-[#c52544] '>
    
     {enabled ?<div className='bg-[#f5faff] lg:bg-[#c52544] white'>
 
 <div className='md:flex md:pt-3  md:justify-between md:pr-5 pt-2' >
- <div className=' md:pt-4  pl-5 md:pl-3'>
+ <div className=' md:pt-4 pl-4 md:pl-3'>
      <div className=''>
          <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-blue-1659527664.svg" alt="mainlogo" className=""
           />
      </div>
-     <div className='hidden md:hidden lg:block'>
+     <div className='hidden md:hidden lg:hidden xl:block'>
         <NavbarLG/>
      </div>
  </div>
  <div>
- <div className='flex items-center gap-3 pl-5 pt-1 md:pt-1'>
+ <div className='flex items-center gap-3 pl-4  md:pt-1'>
  <MdOutlineShoppingCart  className='text-2xl text-blue-500  cursor-pointer' />
- <button className='text-blue-500 font-semibold rounded-3xl border py-2 px-7 hover:bg-[#ff9800] ease-in duration-[400ms] md:py-2 md:px-8 border-blue-500'>
+ <button className='text-blue-500 font-bold rounded-3xl border py-[7px] pb-[9px] px-7 hover:bg-[#ff9800] text-sm ease-in duration-[400ms] md:py-2 md:px-8 border-blue-500'>
      Login
  </button>
  
-     <div className=' lg:hidden' onClick={()=> setEnabled(!enabled)} >
+     <div className=' xl:hidden' onClick={()=> setEnabled(!enabled)} >
      {enabled ? 
-     <BsXLg className='cursor-pointer rounded-full border p-4 text-blue-500 border-blue-500 text-5xl ' />  : 
+     <BsXLg className='cursor-pointer rounded-full border p-3 text-blue-500 border-blue-500 text-5xl ' />  : 
      <AiOutlineMenu className='cursor-pointer rounded-full border p-4 text-blue-500 border-blue-500 text-5xl ' /> }
      
      </div>
@@ -57,28 +57,28 @@ const Header = () => {
  </div>
 </div>   : <div className=' red'>
 
-<div className='md:flex md:pt-5  md:justify-between md:pr-5 pt-2' >
- <div className='  pl-5 md:pl-3 md:pt-4 lg:flex lg:gap-[100px]'>
-     <div className='lg:pl-10'>
+<div className='sm:flex md:pt-5 lg:px-[150px] sm:justify-between sm:pr-5 pt-2  xl:px-10 xl:pt-3 ' >
+ <div className=' sm:pt-3 pl-4 md:pl-3 md:pt-4 lg:flex lg:gap-[100px] '>
+     <div className=''>
          <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-1659527365.svg" alt="mainlogo" className=""
           />
          
      </div>
-     <div className='hidden md:hidden lg:block '>
+     <div className='hidden md:hidden lg:hidden xl:block '>
         <NavbarLG/>
      </div>
  </div>
  <div>
- <div className='flex items-center gap-3 pl-5 pt-1 md:pt-0'>
- <MdOutlineShoppingCart  className='text-2xl text-white cursor-pointer' />
- <button className='text-white font-semibold rounded-3xl border py-2 px-7 hover:bg-[#ff9800] ease-in duration-[400ms] md:py-2 md:px-8'>
+ <div className='flex items-center gap-4 pl-4 lg:pr-5 md:pt-0 xl:pr-2 xl:pl-0 xl:pt-2'>
+ <MdOutlineShoppingCart  className='text-[22px] text-white cursor-pointer mt-2 lg:mt-4 xl:mt-2' />
+ <button className='text-white font-bold rounded-3xl border py-[7px] pb-[9px] px-7 hover:bg-[#ff9800] ease-in text-sm duration-[400ms] md:py-2 md:px-8 sm:py-[9px] sm:px-8 '>
      Login
  </button>
  
-     <div className='lg:hidden' onClick={()=> setEnabled(!enabled)} >
+     <div className='xl:hidden sm:mt-1' onClick={()=> setEnabled(!enabled)} >
      {enabled ? 
      <BsXLg className='cursor-pointer rounded-full border p-4 text-white text-5xl ' />  : 
-     <AiOutlineMenu className='cursor-pointer rounded-full border p-4 text-white text-5xl ' /> }
+     <AiOutlineMenu className='cursor-pointer rounded-full border p-2 text-white text-5xl ' /> }
      
      </div>
  
@@ -108,23 +108,23 @@ const Header = () => {
 
 
 
-    <div className='lg:flex lg:items-center'>
-    <div>
-    <div className='px-5 pt-6 md:pl-[70px] md:pr-[50px]'>
-        <p className='text-white text-3xl font-semibold md:text-2xl md:pt-5 lg:text-4xl lg:pr-[50px] lg:pt-[70px] '>Parade Diskon Hosting Murah Hingga 81%</p>
+    <div className='lg:flex lg:items-center xl:pt-[65px] 2xl:px-[150px] 3xl:px-[280px] 4xl:px-[380px]'>
+    <div className='lg:pl-1 xl:pl-0'>
+    <div className='px-4 pt-7 md:pl-10 md:pr-[50px] xl:pl-8'>
+        <p className='text-white text-2xl font-semibold md:text-2xl md:pt-5 lg:text-3xl lg:pt-0 lg:mt-[-70px] font-hoster pr-6 sm:pt-8 xl:text-4xl xl:leading-[45px] 2xl:pr-10 3xl:pr-[60px]'>Parade Diskon Hosting Murah Hingga 81%</p>
 
-        <p className='text-slate-200 pt-7 text-md  '>Kami berikan penawaran terbaik unlimited web hosting. Fitur terlengkap, harga terjangkau, dan dukungan teknis 24/7 telah tersedia untuk Anda. Promo spesial segera berakhir. Order sekarang!</p>
+        <p className='text-white text-opacity-[0.8] pt-5 text-md pr-5 '>Kami berikan penawaran terbaik unlimited web hosting. Fitur terlengkap, harga terjangkau, dan dukungan teknis 24/7 telah tersedia untuk Anda. Promo spesial segera berakhir. Order sekarang!</p>
     </div>
     <TimerPromo setTimePromo={setTimePromo} />
         {/* btn */}
-        <div className='md:pl-[70px] ml-8 md:ml-0 lg:ml-0 pt-10'>
-        <button className='bg-[#ff9800] text-white rounded-3xl py-4 px-8 font-bold text-sm mb-[100px] hover:bg-orange-500 ease-in duration-[400ms] shadow-sm shadow- md:px-9'>
+        <div className='md:pl-10 ml-4 md:ml-0 lg:ml-0 pt-10 xl:pl-8'>
+        <button className='bg-[#ff9800] text-white rounded-3xl py-4 px-9 font-bold text-sm mb-[60px] hover:bg-orange-500 ease-in duration-[400ms] shadow-sm shadow-white md:px-9'>
             Lihat Penawaran
         </button>
         </div>
     </div>
         {/* image */}
-        <div className='pb-8 px-5 pt-10 lg:pt-0 lg:px-0 lg:mr-[70px]'>
+        <div className='pb-8 px-5  lg:pt-0 lg:mt-[-60px] lg:px-0 lg:mr-[70px] xl:mr-6'>
         <img
         src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/bb-uploads/configs/marketing-tool-hero-parade-diskon-kemerdekaan-niagahoster-1-1659666416.webp"
         alt='promotionimage'
@@ -135,7 +135,7 @@ const Header = () => {
     
    </div>
    
-    <PromoDomain/>
+    {/* <PromoDomain/> */}
     
     </div>
   )
