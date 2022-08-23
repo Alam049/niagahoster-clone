@@ -25,20 +25,22 @@ const Header = () => {
    
     {enabled ?<div className='bg-[#f5faff] lg:bg-[#c52544] white'>
 
-<div className='md:flex md:pt-3  md:justify-between md:pr-5 pt-2' >
+<div className='sm:flex  md:pt-3  sm:justify-between md:pr-5 pt-2 sm:pr-5 sm:pb-5 ' >
  <div className=' md:pt-4 pl-4 md:pl-3'>
      <div className=''>
-         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-blue-1659527664.svg" alt="mainlogo" className=""
+         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-blue-1659527664.svg" alt="mainlogo" className=" sm:hidden md:block"
+          />
+         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-blue-small-1659527703.svg" alt="mainlogo" className=" md:hidden"
           />
      </div>
-     <div className='hidden md:hidden lg:hidden xl:block'>
+     <div className='hidden md:hidden lg:hidden xl:block '>
         <NavbarLG/>
      </div>
  </div>
  <div>
  <div className='flex items-center gap-3 pl-4  md:pt-1'>
  <MdOutlineShoppingCart  className='text-2xl text-blue-500  cursor-pointer' />
- <button className='text-blue-500 font-bold rounded-3xl border py-[7px] pb-[9px] px-7 hover:bg-[#ff9800] text-sm ease-in duration-[400ms] md:py-2 md:px-8 border-blue-500'>
+ <button className='text-blue-500 font-bold rounded-3xl border py-[7px] pb-[9px] px-7 hover:bg-[#ff9800] text-sm ease-in duration-[400ms] md:py-2 md:px-8 border-blue-500 sm:py-[9px] sm:px-8'>
      Login
  </button>
  
@@ -58,10 +60,13 @@ const Header = () => {
 </div>   : <div className=' red'>
 
 <div className='sm:flex md:pt-5 lg:px-[150px] sm:justify-between sm:pr-5 pt-2  xl:px-10 xl:pt-3 ' >
- <div className=' sm:pt-3 pl-4 md:pl-3 md:pt-4 lg:flex lg:gap-[100px] '>
+ <div className=' pl-4 md:pl-3 md:pt-4 lg:flex lg:gap-[100px]  '>
      <div className=''>
-         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-1659527365.svg" alt="mainlogo" className=""
+         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-1659527365.svg" alt="mainlogo" className="sm:hidden md:block"
           />
+         <img src=" https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-small-1659527392.svg" alt="mainlogo" className="md:hidden"
+          />
+          
          
      </div>
      <div className='hidden md:hidden lg:hidden xl:block '>
@@ -111,7 +116,7 @@ const Header = () => {
     <div className='lg:flex lg:items-center xl:pt-[65px] 2xl:px-[150px] 3xl:px-[280px] 4xl:px-[380px]'>
     <div className='lg:pl-1 xl:pl-0'>
     <div className='px-4 pt-7 md:pl-10 md:pr-[50px] xl:pl-8'>
-        <p className='text-white text-2xl font-semibold md:text-2xl md:pt-5 lg:text-3xl lg:pt-0 lg:mt-[-70px] font-hoster pr-6 sm:pt-8 xl:text-4xl xl:leading-[45px] 2xl:pr-10 3xl:pr-[60px]'>Parade Diskon Hosting Murah Hingga 81%</p>
+        <p className='text-white text-2xl font-semibold md:text-2xl md:pt-5 lg:text-3xl lg:pt-0 lg:mt-[-70px] font-hoster pr-6 sm:pt-8 xl:text-4xl sm:text-3xl xl:leading-[45px] 2xl:pr-10 3xl:pr-[60px]'>Parade Diskon Hosting Murah Hingga 81%</p>
 
         <p className='text-white text-opacity-[0.8] pt-5 text-md pr-5 '>Kami berikan penawaran terbaik unlimited web hosting. Fitur terlengkap, harga terjangkau, dan dukungan teknis 24/7 telah tersedia untuk Anda. Promo spesial segera berakhir. Order sekarang!</p>
     </div>

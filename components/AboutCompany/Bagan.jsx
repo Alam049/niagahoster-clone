@@ -11,6 +11,7 @@ const Bagan = () => {
         <h1 className='text-2xl font-semibold text-slate-600  mt-10 '>Fabian Budi Seputro</h1>
         <a href="" className='text-slate-600' >Owner Sate Ratu</a>
     </div>
+    
   )
 }
 

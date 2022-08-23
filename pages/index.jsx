@@ -3,7 +3,7 @@ import Header from "../components/Header/Header"
 import Domain from "../components/Domain/Domain"
 import Layanan from "../components/Layanan/Layanan"
 import Product from "../components/Product/Product"
-import Promo from "../components/PromoEct/Promo"
+import Iklan from "../components/PromoEct/Iklan"
 import Desc from "../components/AboutCompany/Description"
 import Footer from "../components/Footer/Footer"
 import ScroolChat from "../components/ScroolChat/ScroolChat"
@@ -20,7 +20,7 @@ const Home = () => {
       <Domain/>
       <Layanan/>
       <Product/>
-      <Promo/>
+      <Iklan/>
       <Desc/>
       <Footer/>
       <ScroolChat/>

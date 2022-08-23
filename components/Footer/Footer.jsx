@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className='bg-[#22273c] md:pl-[65px] mt-5'>
         
-        <div className='parent ml-6  pt-[70px] md:grid md:grid-cols-2 lg:grid-cols-4 lg:ml-1'>
+        <div className='parent ml-6  pt-[70px] lg:grid lg:grid-cols-2 xl:grid-cols-4 lg:ml-1'>
             <div className='part1'>
             <div className='web_Hosting'>
             <h1 className='text-white font-semibold '>Web Hosting</h1>
@@ -63,14 +63,18 @@ const Footer = () => {
         </div>
         
        
-        <div className='px-4 mt-7  lg:ml-[480px] lg:mt-0'>
-          <div className='lg:mt-[-130px] lg:mb-[100px]'>
-          <h1 className='text-white font-medium text-lg '>Newsletter</h1>
-          <form className='md:flex md:items-center'>
-            <input type="email" placeholder='Ketik alamat email disini' className='placeholder:text-center rounded-full py-3 px-[30px] placeholder:text-slate-600 md:mt-5 md:px-[140px] lg:px-7 lg:w-[350px] lg:placeholder:text-start  '  />
-            <button type='submit' className='bg-[#ff9800] rounded-full text-white px-[35px] py-3 ml-[34px] mt-5 shadow-md font-medium hover:bg-yellow-700 ease-in duration-[400ms] md:ml-[30px] ' >  
+        <div className='px-5 mt-7 sm:mt-[60px] lg:ml-[480px] lg:mt-0'>
+          <div className='lg:mt-[-130px] lg:mb-[100px] '>
+          <h1 className='text-white hidden lg:block font-medium text-lg '>Newsletter</h1>
+          <form className='sm:flex sm:items-center sm:flex-wrap sm:gap-8'>
+            <div className=''>
+            <input type="email" placeholder='Ketik alamat email disini' className='placeholder:text-center rounded-full py-3 w-full sm:px-10 placeholder:text-slate-600 md:mt-5 md:px-[140px] lg:px-7 lg:w-[350px] lg:placeholder:text-start  '  />
+            </div>
+            <div className=''>
+            <button type='submit' className='bg-[#ff9800] rounded-full text-white px-[35px] py-3 w-full mt-5 sm:mt-0 shadow-md font-medium hover:bg-yellow-700 ease-in duration-[400ms] md:ml-[30px] ' >  
               Berlangganan
             </button>
+            </div>
           </form>
           </div>
         </div>

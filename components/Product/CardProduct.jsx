@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+
 
 
 const data =[
@@ -105,39 +105,64 @@ const data =[
         classs:'Domain',
         time:"/tahun"
     },
+
 ]
 
 
 const CardProduct = () => {
   return (
-    <div className='md:grid md:grid-cols-2'>
+    <div className='md:grid md:grid-cols-2 md:gap-5 md:px-10  lg:pr-[50px] lg:mt-[100px] xl:grid-cols-3 xl:gap-10 2xl:px-[180px] 3xl:px-[280px] 4xl:px-[340px] md:place-content-center '>
         {data.map(({ id, title, image, name, desc, price, logoFirst, logoSecond, paket,classs ,time }) => {
             return (
-                <div key={id} className=" mx-10 mt-10 border mr-[110px] shadow-2xl rounded-2xl overflow-hidden h-[605px] md:mr-[0.1px] md:mx-5 ">
+                <div className='lg:pr-[100px] xl:pr-0'>
+                    <div key={id} className=" mx-10 lg:mt-5 mt-10 border pb-5 shadow-2xl rounded-2xl overflow-hidden sm:mr-[150px] md:mr-0 md:mx-0  ">
                     <h1 className='bg-[#01c0a6] text-white font-semibold text-xl text-center p-3' >{title}</h1>
                     <div className='flex items-center ml-7 mt-10 gap-3'>
                         <img src={image} className="object-cover w-[65px]"  />
                         <h1 className='text-xl
-                         font-bold  text-slate-600 px-10'>{name}</h1>
+                         font-bold  text-slate-600 px-5'>{name}</h1>
                     </div>
-                    <div className='flex items-center gap-3 ml-8 bg-[#FFE082] mr-[140px] px-3 mt-10 rounded-md py-1.5'>
+                    <div className='xl:flex xl:flex-wrap xl:items-center'>
+                    <div>
+                    <div className='flex items-center gap-3 ml-8 bg-[#FFE082] xl:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2'>
                     <img src={logoFirst} className="object-cover w-3"  />
-                        <p className='text-[#C77700] text-sm'>{classs}</p>
+                        <p className='text-[#C77700] text-xs font-semibold'>{classs}</p>
                     </div>
-                    <div className='flex items-center gap-3 ml-8 bg-[#e0efff] mr-[120px] px-3 mt-2 rounded-md py-1.5  '>
+                    </div>
+                    <div className='pr-[130px] xl:mt-8 xl:pr-0'>
+                    <div className='flex items-center gap-3 ml-8 bg-[#e0efff] xl:ml-2 px-3 mt-2 rounded-md py-2  '>
                     <img src={logoSecond}  className="object-cover w-3" />
-                        <p className='text-sm font-medium text-blue-600'>{paket}</p>
+                        <p className='text-xs  font-semibold text-blue-600'>{paket}</p>
+                    </div>
+                    </div>
                     </div>
                     <p className='ml-8 mt-5 leading-7 text-slate-400 text-sm pr-[59px]'>{desc}</p>
 
-                    <h3 className='ml-8 mt-8 text-sm text-slate-500 font-medium'>Mulai dari</h3>
+                    <h3 className='ml-8 mt-8 text-xs text-slate-500 font-medium'>Mulai dari</h3>
                     <h1 className='ml-8 mt-2 font-semibold text-lg'><span className='text-[#ff9800] text-2xl font-semibold'>{price}</span> {time}</h1>
-                    <button className='bg-[#ff9800] rounded-full text-white px-[75px] py-3 ml-[34px] mt-5 shadow-md  shadow-yellow-100 font-medium hover:bg-yellow-600 ease-in duration-[400ms] '>
+                    <div className='px-6 '>
+                    <button className='bg-[#ff9800] rounded-full text-white px-[75px] py-3 w-full mt-5 shadow-md  shadow-yellow-100 font-medium hover:bg-yellow-600 ease-in duration-[400ms] '>
                         Beli Sekarang
                     </button>
+                    </div>
+                </div>
                 </div>
             )
         })}
+       <div className='px-8 md:px-0 sm:mr-[120px] md:mr-0 xl:px-0 lg:pr-[100px] xl:pr-0'>
+    <div className='bg-[#0087ff]  text-white xl:mt-5 mt-[70px]  rounded-xl text-center pt-6 shadow-lg w-full  shadow-slate-400  '>
+        <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-more-promo-1654237782.webp" className='mr-auto ml-auto w-[75px] h-[75px]  object-contain'/>
+        <h1 className='text-xl font-bold mt-10 '>Lihat Semua Promo</h1>
+        <p className='text-sm mt-4 px-5'>Temukan berbagai promo menarik dari Niagahoster di sini!</p>
+
+        <div className='px-5'>
+        <button className='mt-[150px] mb-10 font-semibold bg-[#ff9800] w-full py-3 rounded-full hover:bg-yellow-600 ease-in duration-[400ms] shadow-sm shadow-yellow-500 '>
+            Lihat Promo Lainnya
+        </button>
+        </div>
+       
+    </div>
+    </div>
     </div>
   )
 }
