@@ -7,6 +7,8 @@ import Bagan from "./Bagan"
 import Pelanggan from "./Pelanggan"
 import Testimoni from "./Testimoni"
 import IMG1 from "../../assets/img1.png"
+import TestimoniRevisi from "./TestimoniRevisi"
+import TestimoniR2 from "./TestimoniR2"
 
 const Description = () => {
   const [enabled,setEnabled] = useState('muhammad')
@@ -72,7 +74,9 @@ const Description = () => {
         
     </div>
     <Pelanggan/>
-        <Testimoni/>
+        {/* <Testimoni/> */}
+        {/* <TestimoniRevisi/> */}
+        <TestimoniR2/>
    </div>
   )
 }

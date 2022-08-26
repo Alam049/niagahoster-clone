@@ -13,12 +13,12 @@ import CopyRight from "./Copyright"
 
 const Footer = () => {
   return (
-    <div className='bg-[#22273c] md:pl-[65px] mt-5'>
+    <div className='bg-[#22273c] md:pl-10 mt-5 2xl:px-[180px] 3xl:px-[320px] 4xl:px-[390px]'>
         
-        <div className='parent ml-6  pt-[70px] lg:grid lg:grid-cols-2 xl:grid-cols-4 lg:ml-1'>
+        <div className='parent ml-6 md:ml-0 pt-[70px] md:grid md:grid-cols-2 lg:grid-cols-4 '>
             <div className='part1'>
             <div className='web_Hosting'>
-            <h1 className='text-white font-semibold '>Web Hosting</h1>
+            <h1 className='text-white font-semibold'>Web Hosting</h1>
             <Data1/>
             </div>
             <div className='mt-10 domain'>
@@ -44,6 +44,7 @@ const Footer = () => {
             <Data6/>
             </div>
             </div>
+            
             <div className='part3'>
             <div className='mt-10 lg:mt-0 kemitraan'>
             <h1 className='text-white font-semibold '>Kemitraan</h1>
@@ -59,19 +60,23 @@ const Footer = () => {
             </div>
             
             </div>
-            <Profile />
+            <div className='hidden lg:block'>
+            <Profile  />
+            </div>
         </div>
         
-       
-        <div className='px-5 mt-7 sm:mt-[60px] lg:ml-[480px] lg:mt-0'>
-          <div className='lg:mt-[-130px] lg:mb-[100px] '>
-          <h1 className='text-white hidden lg:block font-medium text-lg '>Newsletter</h1>
-          <form className='sm:flex sm:items-center sm:flex-wrap sm:gap-8'>
-            <div className=''>
-            <input type="email" placeholder='Ketik alamat email disini' className='placeholder:text-center rounded-full py-3 w-full sm:px-10 placeholder:text-slate-600 md:mt-5 md:px-[140px] lg:px-7 lg:w-[350px] lg:placeholder:text-start  '  />
+        <div className='lg:hidden'>
+            <Profile  />
             </div>
+        <div className='px-5 mt-7 sm:mt-[60px] lg:ml-[480px] lg:mt-0 xl:pl-[90px]'>
+          <div className='lg:mt-[-130px] lg:mb-[100px] '>
+          <h1 className='text-white hidden lg:block font-medium text-lg lg:pb-3'>Newsletter</h1>
+          <form className='sm:flex sm:items-center sm:flex-wrap sm:gap-8 md:gap-0 xl:gap-4'>
             <div className=''>
-            <button type='submit' className='bg-[#ff9800] rounded-full text-white px-[35px] py-3 w-full mt-5 sm:mt-0 shadow-md font-medium hover:bg-yellow-700 ease-in duration-[400ms] md:ml-[30px] ' >  
+            <input type="email" placeholder='Ketik alamat email disini' className='placeholder:text-center rounded-full py-3 w-full sm:px-10 placeholder:text-slate-600  md:px-[140px] lg:px-[60px]  lg:placeholder:text-start xl:px-[80px] '  />
+            </div>
+            <div className=' lg:pt-1'>
+            <button type='submit' className='bg-[#ff9800] rounded-full text-white px-[35px] py-3 w-full mt-5 sm:mt-0 shadow-md font-medium md:px-[20px]  hover:bg-yellow-700 ease-in duration-[400ms] md:ml-[30px] lg:px-10 lg:ml-0' >  
               Berlangganan
             </button>
             </div>

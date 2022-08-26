@@ -7,7 +7,8 @@ import Link from 'next/link'
 
 const Icon = () => {
   return (
-    <div className='text-white grid grid-cols-3 items-center pr-[120px] mt-8 gap-6 justify-items-center px-[90px]  md:mr-[120px] lg:px-0 lg:mr-[65px] lg:ml-0 ' >
+    <div className='md:pr-[350px] md:pl-[200px] lg:pr-0 lg:pl-0'>
+      <div className='text-white grid grid-cols-3 items-center pr-[120px] mt-8 gap-6 justify-items-center px-[90px]  md:px-0  ' >
       
      
       <FiFacebook  className=' p-3 rounded-full bg-slate-600 text-5xl hover:bg-yellow-600 ease-in duration-[400ms] cursor-pointer '/>
@@ -28,6 +29,7 @@ const Icon = () => {
      
      <AiOutlineYoutube className='hover:bg-yellow-600 ease-in duration-[400ms] cursor-pointer  p-3 rounded-full bg-slate-600 text-5xl' />
     
+    </div>
     </div>
   )
 }

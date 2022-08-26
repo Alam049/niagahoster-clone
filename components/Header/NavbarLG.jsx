@@ -11,7 +11,7 @@ const NavbarLG = () => {
         <div className=''>
         <button className='peer text-white font-semibold ' >Hosting</button>
         <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] absolute'></div>
-            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white mt-2 absolute z-10 px-4 pt-8 pb-2 duration-300  '>
+            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2 duration-300  '>
                 
            <div className='flex gap-5 mb-5 hover:bg-gray-200 py-2 pl-4  rounded-lg'>
            <div>
@@ -74,7 +74,7 @@ const NavbarLG = () => {
         </div>
         <div><a className='peer text-white font-semibold ' href="">VPS</a>
         <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-7 h-[0.8px] absolute '></div>
-            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white mt-2 absolute z-10 px-4 pt-8 pb-2  '>
+            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
            <div className='flex gap-5 mb-5 hover:bg-gray-200 py-2 pl-4  rounded-lg'>
            <div>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp" />
@@ -120,7 +120,7 @@ const NavbarLG = () => {
         <div>
         <a className='peer text-white font-semibold ' href="">Domain</a>
         <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] absolute'></div>
-            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white mt-2 absolute z-10 px-4 pt-8 pb-2  '>
+            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
            <div className='flex gap-5 mb-5 hover:bg-gray-200 py-2 pl-4  rounded-lg'>
            <div>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp" />
@@ -165,7 +165,7 @@ const NavbarLG = () => {
         <div>
         <a className='peer text-white font-semibold ' href="">Website</a>
         <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] absolute'></div>
-            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white mt-2 absolute z-10 px-4 pt-8 pb-2  '>
+            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
            <div className='flex gap-5 mb-5 hover:bg-gray-200 py-2 pl-4  rounded-lg'>
            <div>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp" />
@@ -191,7 +191,8 @@ const NavbarLG = () => {
             </div>
         </div>
         <div>
-            <a className=' text-white font-semibold' href="">Promo</a>
+            <a className='peer text-white font-semibold' href="">Promo</a>
+            <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] absolute'></div>
         </div>
     </div>
   )

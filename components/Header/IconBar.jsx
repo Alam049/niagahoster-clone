@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const IconBar = () => {
   return (
-    <div className='lg:hidden'>
+    <div className='xl:hidden'>
         <h5 className='text-center text-xs text-slate-600 mt-10 '>Copyright ©2022 Niagahoster</h5>
         <div className='flex items-center justify-center gap-3 mt-10 pb-5'>
             

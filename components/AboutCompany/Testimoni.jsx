@@ -3,7 +3,7 @@ import { AiOutlineMinus,AiOutlinePlus } from "react-icons/ai"
 import { Transition } from "@headlessui/react"
 
 const Testimoni = () => {
-  const [enabled,setEnabled] = useState(true)
+  const [enabled,setEnabled] = useState(false)
   const [enabled2,setEnabled2] = useState(false)
   const [enabled3,setEnabled3] = useState(false)
   const [enabled4,setEnabled4] = useState(false)
@@ -18,12 +18,13 @@ const Testimoni = () => {
         <div className='bg-[#f5faff] mx-5 md:mx-[90px] mt-[65px]   rounded-xl py-2  lg:mr-[220px] lg:ml-[270px]'>
          <div className='flex items-center justify-between pb-5 '>
          <h3 className='font-medium pl-5 mt-[20px]   '>Apa itu web hosting?</h3>
-         <div className='pt-5 pr-6' onClick={()=> setEnabled(!enabled)}>
-          {enabled ?  <div><AiOutlineMinus className='text-[#007aff] text-xl cursor-pointer ' /></div> :<div> <AiOutlinePlus className='text-[#007aff] text-xl cursor-pointer '  /></div>  
+         <div className='pt-5 pr-6' onClick={()=> setEnabled(!enabled ) && setEnabled2(enabled2)}>
+          {enabled  ?  <div><AiOutlineMinus className='text-[#007aff] text-xl cursor-pointer ' /></div> :<div> <AiOutlinePlus className='text-[#007aff] text-xl cursor-pointer '  /></div>  
           }</div>
          </div>
           <Transition
-            show={enabled}
+            show={   enabled 
+             }
             enter="transition-opacity duration-1000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
@@ -39,12 +40,12 @@ const Testimoni = () => {
         <div className='bg-[#f5faff] mx-5 rounded-xl md:mx-[90px] lg:mr-[220px] lg:ml-[270px]'>
          <div className='flex items-center justify-between pb-6 mt-8  '>
          <h3 className='font-medium  pl-5 mt-[10px] pt-5 pr-[100px]'>Mengapa saya harus menggunakan web hosting Indonesia?</h3>
-         <div className='pt-5 pr-6' onClick={()=> setEnabled2(!enabled2)}>
+         <div className='pt-5 pr-6' onClick={()=> setEnabled2( !enabled2)}>
           {enabled2 ?<AiOutlineMinus className='text-blue-600 text-xl cursor-pointer ' /> : <AiOutlinePlus className='text-blue-600 text-xl cursor-pointer '  />
           }</div>
          </div>
           <Transition 
-          show={enabled2}
+          show={ enabled2 }
           enter="transition-opacity duration-1000"
           enterFrom="opacity-0"
           enterTo="opacity-100"

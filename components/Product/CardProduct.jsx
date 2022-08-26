@@ -89,8 +89,10 @@ const data =[
         name:'Domain .COM',
         desc:'Miliki ekstensi domain paling terpopuler di dunia dengan tawaran harga termurah di Indonesia!',
         price:'Rp 115.000',
-        logoFirst:'https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-star-1654247009.webp',
-        classs:'Domain',
+        logoSecond:'https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-star-1654247009.webp',
+        logoFirst:'',
+        paket:'Domain',
+        classs: '',
         time:'/tahun'
         
     },
@@ -101,8 +103,10 @@ const data =[
         name:'Domain .ID',
         desc:'Miliki ekstensi domain Indonesia, dengan persyaratan mudah dan gratis proteksi privasi WHOis',
         price:'Rp 230.000',
-        logoFirst:'https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-star-1654247009.webp',
-        classs:'Domain',
+        logoSecond:'https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/2022/arunika/icon-star-1654247009.webp',
+        logoFirst:'',
+        paket:'Domain',
+        classs:'',
         time:"/tahun"
     },
 
@@ -114,26 +118,39 @@ const CardProduct = () => {
     <div className='md:grid md:grid-cols-2 md:gap-5 md:px-10  lg:pr-[50px] lg:mt-[100px] xl:grid-cols-3 xl:gap-10 2xl:px-[180px] 3xl:px-[280px] 4xl:px-[340px] md:place-content-center '>
         {data.map(({ id, title, image, name, desc, price, logoFirst, logoSecond, paket,classs ,time }) => {
             return (
-                <div className='lg:pr-[100px] xl:pr-0'>
-                    <div key={id} className=" mx-10 lg:mt-5 mt-10 border pb-5 shadow-2xl rounded-2xl overflow-hidden sm:mr-[150px] md:mr-0 md:mx-0  ">
-                    <h1 className='bg-[#01c0a6] text-white font-semibold text-xl text-center p-3' >{title}</h1>
+                <div key={id} className='lg:pr-[100px] xl:pr-0'>
+                    <div  className=" mx-10 lg:mt-5 mt-10 border pb-5 shadow-2xl rounded-2xl overflow-hidden sm:mr-[150px] md:mr-0 md:mx-0  ">
+                        <h1 className='bg-[#01c0a6] text-white font-semibold text-xl text-center p-3' >{title}</h1>
                     <div className='flex items-center ml-7 mt-10 gap-3'>
                         <img src={image} className="object-cover w-[65px]"  />
                         <h1 className='text-xl
                          font-bold  text-slate-600 px-5'>{name}</h1>
                     </div>
                     <div className='xl:flex xl:flex-wrap xl:items-center'>
-                    <div>
-                    <div className='flex items-center gap-3 ml-8 bg-[#FFE082] xl:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2'>
+                        {(classs === 'Expert' && <div className='flex items-center gap-3 ml-8 bg-[#fbb2b2] xl:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2 '>
+                    <img src={logoFirst}  className="object-cover w-3" />
+                    <p className='text-[#A83232] text-xs font-semibold' >{classs}</p>
+                    </div> ) || (classs === 'Beginner' && <div className='flex items-center gap-3 ml-8 bg-[#ADEBE3] xl:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2 '>
+                    <img src={logoFirst}  className="object-cover w-3" />
+                    <p className='text-[#00897B] text-xs font-semibold' >{classs}</p>
+                    </div>) || (classs && logoFirst ?  <div className='flex items-center gap-3 ml-8 bg-[#FFE082] xl:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2'>
                     <img src={logoFirst} className="object-cover w-3"  />
                         <p className='text-[#C77700] text-xs font-semibold'>{classs}</p>
-                    </div>
-                    </div>
+                    </div> : null ) }
+
+                   
+
+
+
                     <div className='pr-[130px] xl:mt-8 xl:pr-0'>
-                    <div className='flex items-center gap-3 ml-8 bg-[#e0efff] xl:ml-2 px-3 mt-2 rounded-md py-2  '>
+                 { (paket === 'Paket Termurah' && <div className='flex items-center gap-3 ml-8 bg-[#adebe3] xl:ml-2 px-3 mt-2 rounded-md py-2 '>
                     <img src={logoSecond}  className="object-cover w-3" />
-                        <p className='text-xs  font-semibold text-blue-600'>{paket}</p>
-                    </div>
+                    <p className='text-xs font-semibold text-[#00897B]' >{paket}</p>
+                    </div> ) || (paket && logoSecond ?  <div className='flex items-center gap-3 ml-8 bg-[#e0efff] xl:ml-2 px-3 mt-2 rounded-md py-2 '>
+                    <img src={logoSecond}  className="object-cover w-3" />
+                    <p className='text-xs font-semibold text-blue-600' >{paket}</p>
+                    </div> :  null) }
+                    
                     </div>
                     </div>
                     <p className='ml-8 mt-5 leading-7 text-slate-400 text-sm pr-[59px]'>{desc}</p>

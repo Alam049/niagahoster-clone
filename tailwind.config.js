@@ -11,6 +11,11 @@ module.exports = {
         'cs': '577px',
         'cs1': '782px',
         'cs2': '1000px',
+        'cs3':'1024px',
+        'cs4': '1200px',
+        'cs5': '1500px',
+        'cs6': '1800px',
+        'cs7': '1920px',
         'xl': '1200px',
         '2xl': '1500px',
         '3xl': '1800px',
@@ -18,7 +23,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      hoster: ["Nunito Sans", "sans-serif"],
+      sans: ["Nunito", "sans-serif"],
     }
   },
   plugins: [],

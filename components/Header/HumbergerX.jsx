@@ -14,7 +14,7 @@ const HumbergerX = () => {
 
   return (
     <div className=' '>
-        <div className='bg-[#f5faff] lg:bg-[#c52544] w-full'>
+        <div className='bg-[#f5faff] xl:bg-[#c52544] w-full'>
          <div className='flex items-center justify-between pr-5 pb-1'>
          <h3 className='font-bold text-lg text-slate-600 pl-5 '>Hosting</h3>
          <button className='cursor-pointer pt-5' onClick={()=> setEnabled(!enabled)}>
@@ -117,7 +117,7 @@ const HumbergerX = () => {
           </div>
 
           {/* VPS */}
-        <div className='bg-[#f5faff] lg:bg-[#c52544] w-full'>
+        <div className='bg-[#f5faff] xl:bg-[#c52544] w-full'>
          <div className='flex items-center justify-between'>
          <h3 className='font-bold text-lg text-slate-600 pl-5 pb-2  pt-3'>VPS</h3>
          <button className='cursor-pointer pr-5 pt-2 ' onClick={()=> setEnabled2(!enabled2)}>
@@ -192,7 +192,7 @@ const HumbergerX = () => {
           </div>
 
           {/* Domain */}
-        <div className='bg-[#f5faff] lg:bg-[#c52544] w-full '>
+        <div className='bg-[#f5faff] xl:bg-[#c52544] w-full '>
          <div className='flex items-center justify-between'>
          <h3 className='font-bold text-lg text-slate-600 pl-5  pt-5 pb-2'>Domain</h3>
          <button className='cursor-pointer pr-5 pt-5'  onClick={()=> setEnabled3(!enabled3)}>
@@ -268,7 +268,7 @@ const HumbergerX = () => {
 
 
           {/* Website */}
-        <div className='bg-[#f5faff] w-full lg:bg-[#c52544]  '>
+        <div className='bg-[#f5faff] w-full xl:bg-[#c52544]  '>
          <div className='flex items-center justify-between '>
          <h3 className='font-bold text-lg text-slate-600 pl-5  pt-6 pb-2`'>Website</h3>
          <button className='cursor-pointer pt-6 pr-5'  onClick={()=> setEnabled4(!enabled4)}>
@@ -316,7 +316,7 @@ const HumbergerX = () => {
           </div>
           </Transition>
           </div>
-          <div className='bg-[#f5faff] lg:bg-[#c52544] pb-5'>
+          <div className='bg-[#f5faff] xl:bg-[#c52544] pb-5'>
           <Link href="">
           <h3 className='font-bold text-lg text-slate-600 pl-5  pt-5 cursor-pointer '>Promo</h3>
           </Link>

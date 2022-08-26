@@ -2,5 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* font by google */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/Nunito-Regular.ttf");
+}
+
+.answer_wrapper.open {
+  height: auto;
+}
+
+.answer_wrapper {
+  transition: height ease 400ms;
+}
