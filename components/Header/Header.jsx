@@ -11,6 +11,7 @@ import PromoDomain from "./PromoDomain"
 import NavbarLG from "./NavbarLG"
 import TimerPromo from "./TimerPromo"
 import { Transition } from "@headlessui/react"
+import HumbergerXRevisi from './HumbergerXRevisi'
 
 
 const Header = () => {
@@ -95,7 +96,7 @@ const Header = () => {
  </div>
  
  </div>
-</div> }
+ </div>}
    
 
    
@@ -122,8 +123,9 @@ const Header = () => {
     leave="transition ease-in-out duration-500 transform"
     leaveFrom="translate-y-0"
     leaveTo="-translate-y-full"
-    className={` xl:hidden  ${!enabled && "hidden"}`}>
-        <HumbergerX/>
+    className={` xl:hidden`}>
+        {/* <HumbergerX/> */}
+        <HumbergerXRevisi/>
     </Transition>
 
 

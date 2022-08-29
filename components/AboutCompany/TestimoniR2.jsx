@@ -63,7 +63,7 @@ const TestimoniR2 = () => {
     //     </ul>
     // </div>
     <div className='mb-[100px] '>
-        <h1 className='text-2xl  font-bold text-slate-600  pb-10 mt-[70px] md:mt-[180px] md:text-start md:text-4xl  md:ml-[60px] lg:ml-0 lg:text-center lg:text-[42px]'>Pertanyaan yang sering diajukan</h1>
+        <h1 className='text-2xl ml-8 font-bold text-slate-600  pb-10 mt-[70px] md:mt-[180px] md:text-start md:text-4xl  md:ml-[60px] lg:ml-0 lg:text-center lg:text-[42px]'>Pertanyaan yang sering diajukan</h1>
         <ul >
             {testimoni.map((testimoniData, id) => (
                 <TestimoniItem key={id} testimoniData={testimoniData} onToggle={() => handleToggle(id)} 

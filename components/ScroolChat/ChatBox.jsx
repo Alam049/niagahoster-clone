@@ -7,18 +7,11 @@ import { Transition } from '@headlessui/react'
 
 const ChatBox = ({enabled}) => {
   return (
-    <Transition
+    <div
     show={enabled}
     className='mb-5 w-[400px]'>
 
-        <Transition.Child 
-        enter="transition-opacity delay-500 ease-linear duration-1000"
-        afterEnter="delay-500"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity ease-linear duration-300"
-        leaveFrom="opacity-100"
-        
+        <div 
         className='bg-[#5931d3] overflow-y-scroll lg:h-[450px] rounded-t-lg   md:h-[420px] h-[430px] '>
         
             <div className='pl-4'>
@@ -82,10 +75,10 @@ const ChatBox = ({enabled}) => {
 
             </div>
             
-        </Transition.Child>
+        </div>
         
 
-    </Transition>
+    </div>
   )
 }
 

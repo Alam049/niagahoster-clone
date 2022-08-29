@@ -3,11 +3,9 @@ import React, { useState } from 'react'
 import Simbol from "../../assets/simbol.png"
 import VideoIMG from "../../assets/video.png"
 import { BsFillPlayFill } from "react-icons/bs"
-import Bagan from "./Bagan"
+
 import Pelanggan from "./Pelanggan"
-import Testimoni from "./Testimoni"
-import IMG1 from "../../assets/img1.png"
-import TestimoniRevisi from "./TestimoniRevisi"
+
 import TestimoniR2 from "./TestimoniR2"
 
 const Description = () => {
@@ -22,9 +20,15 @@ const Description = () => {
         <div className='mt-[150px] md:mt-[190px] md:pt-[55px]  '>
         <Image src={Simbol}  width="100px" height="100px" className='object-contain' />
         </div>
-        <div className=' '>
+        {(enabled === 'muhammad' && <div className=' '>
         <h1 className='pl-5 pr-[60px] text-2xl font-md text-[#717B8A] md:text-3xl md:leading-[48px] md:mt-3 3xl:pr-[180px] '>“Krafthaus menggunakan website untuk memberikan informasi kepada talent-talent muda khususnya di Yogyakarta untuk dapat bergabung bersama krafthaus”</h1>
-        </div>
+        </div>) || (enabled === 'habib' && <div className=' '>
+        <h1 className='pl-5 pr-[60px] text-2xl font-md text-[#717B8A] md:text-3xl md:leading-[48px] md:mt-3 3xl:pr-[180px] '>“Dengan website kita bisa lebih banyak menjangkau customer, selain itu juga trust atau kepercayaan dari customer juga akan meningkat”</h1>
+        </div> ) || (enabled === "fabian" &&  <div className=' '>
+        <h1 className='pl-5 pr-[60px] text-2xl font-md text-[#717B8A] md:text-3xl md:leading-[48px] md:mt-3 3xl:pr-[180px] '>“Solusi yang diberikan tim support Niagahoster sangat mudah dimengerti buat saya yang tidak paham teknis”</h1>
+        </div>)}
+        
+       
         <button className='mt-10 mb-6 ml-5 font-semibold bg-[#ff9800] pl-[45px] pr-[50px] py-3 rounded-full text-white hover:bg-yellow-600 ease-in duration-[400ms] shadow-sm shadow-yellow-500 flex items-center gap-2 md:mt-[60px] md:mb-0 md:py-[10px]'>
             LIHAT VIDEO <span className='text-3xl'><BsFillPlayFill/></span>
         </button>
@@ -69,7 +73,7 @@ const Description = () => {
         <a href="" className='text-[#535961]' >Owner Sate Ratu</a>
         <div className={`border-10 bg-slate-700 w-[335px] h-[2px] mt-4 md:mt-6 md:w-[525px] lg:w-[290px] ${enabled !== "fabian" && "hidden"}`}></div>
         </div>
-    </div>
+      </div>
         
         
     </div>

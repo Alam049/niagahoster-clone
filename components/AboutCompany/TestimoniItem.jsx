@@ -34,6 +34,8 @@ const TestimoniItem = ({testimoniData, active, onToggle}) => {
            <li className={` bg-[#F5FAFF] py-7 px-5 rounded-lg sm:py-5 
             ${active ? 'active' : ""}`} >
              <div className='flex justify-between cursor-pointer' onClick={onToggle}>
+     
+     
                      <h1 className='text-[#29384E] font-semibold'>{name}</h1>
                     <button className='text-[#007AFF] text-3xl'>{ active ? "-" : "+"}</button>
                </div> 

@@ -126,14 +126,14 @@ const CardProduct = () => {
                         <h1 className='text-xl
                          font-bold  text-slate-600 px-5'>{name}</h1>
                     </div>
-                    <div className='xl:flex xl:flex-wrap xl:items-center'>
-                        {(classs === 'Expert' && <div className='flex items-center gap-3 ml-8 bg-[#fbb2b2] xl:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2 '>
+                    <div className='md:flex md:flex-wrap md:items-center'>
+                        {(classs === 'Expert' && <div className='flex items-center gap-3 ml-8 bg-[#fbb2b2] md:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2 '>
                     <img src={logoFirst}  className="object-cover w-3" />
                     <p className='text-[#A83232] text-xs font-semibold' >{classs}</p>
-                    </div> ) || (classs === 'Beginner' && <div className='flex items-center gap-3 ml-8 bg-[#ADEBE3] xl:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2 '>
+                    </div> ) || (classs === 'Beginner' && <div className='flex items-center gap-3 ml-8 bg-[#ADEBE3] md:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2 '>
                     <img src={logoFirst}  className="object-cover w-3" />
                     <p className='text-[#00897B] text-xs font-semibold' >{classs}</p>
-                    </div>) || (classs && logoFirst ?  <div className='flex items-center gap-3 ml-8 bg-[#FFE082] xl:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2'>
+                    </div>) || (classs && logoFirst ?  <div className='flex items-center gap-3 ml-8 bg-[#FFE082] md:mr-0 mr-[140px] px-3 mt-10 rounded-md py-2'>
                     <img src={logoFirst} className="object-cover w-3"  />
                         <p className='text-[#C77700] text-xs font-semibold'>{classs}</p>
                     </div> : null ) }
@@ -142,11 +142,14 @@ const CardProduct = () => {
 
 
 
-                    <div className='pr-[130px] xl:mt-8 xl:pr-0'>
-                 { (paket === 'Paket Termurah' && <div className='flex items-center gap-3 ml-8 bg-[#adebe3] xl:ml-2 px-3 mt-2 rounded-md py-2 '>
+                    <div className='pr-[130px] md:mt-8 md:pr-0'>
+                 { (paket === 'Paket Termurah' && <div className='flex items-center gap-3 ml-8 md:ml-3  bg-[#adebe3] xl:ml-2 px-3 mt-2 rounded-md py-2 '>
                     <img src={logoSecond}  className="object-cover w-3" />
                     <p className='text-xs font-semibold text-[#00897B]' >{paket}</p>
-                    </div> ) || (paket && logoSecond ?  <div className='flex items-center gap-3 ml-8 bg-[#e0efff] xl:ml-2 px-3 mt-2 rounded-md py-2 '>
+                    </div> ) || (paket === 'Domain' && <div className=' flex items-center  gap-3 ml-8 bg-[#e0efff] xl:ml-8 px-3 mt-2 xl:mt-0 rounded-md py-2 md:ml-8   '>
+                        <img src={logoSecond} className="object-cover w-3"/>
+                        <p className='text-xs font-semibold text-blue-600'>{paket}</p>
+                    </div>) || (paket && logoSecond ?  <div className='flex items-center gap-3 ml-8 bg-[#e0efff] xl:ml-2 px-3 mt-2 rounded-md py-2 md:ml-3'>
                     <img src={logoSecond}  className="object-cover w-3" />
                     <p className='text-xs font-semibold text-blue-600' >{paket}</p>
                     </div> :  null) }

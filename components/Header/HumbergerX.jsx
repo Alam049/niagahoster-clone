@@ -17,25 +17,27 @@ const HumbergerX = () => {
         <div className='bg-[#f5faff] xl:bg-[#c52544] w-full'>
          <div className='flex items-center justify-between pr-5 pb-1'>
          <h3 className='font-bold text-lg text-slate-600 pl-5 '>Hosting</h3>
-         <button className='cursor-pointer pt-5' onClick={()=> setEnabled(!enabled)}>
+         <div className='cursor-pointer pt-5' onClick={()=> setEnabled(!enabled)}>
           {enabled ?<RiArrowDropUpLine className='text-slate-600 text-3xl'  /> : <RiArrowDropDownLine className='text-slate-600 text-3xl' />
-          }</button>
+          }</div>
          </div>
          <Transition
          show={enabled}
-         enter="transition-opacity duration-500"
-         enterFrom="opacity-0"
-         enterTo="opacity-100"
-         leave="transition-opacity duration-150"
-         leaveFrom="opacity-100"
-         leaveTo="opacity-0"
-         className={` bg-white mx-5 rounded-xl  ${!enabled && "hidden"}`}>
+         enter="transition ease-in-out duration-500 transform"
+        enterFrom="translate-y-full"
+        enterTo="translate-y-50"
+        leave="transition ease-in-out duration-500 transform"
+        leaveFrom="translate-y-0"
+        leaveTo="-translate-y-full"
+         className={` bg-white mx-5 rounded-xl `}>
          
          <div className={`pl-4 pr-3 text-slate-600 pt-7  `}>
           <div className='  '>
           <div className='flex cursor-pointer items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp" 
+                
+                />
             </div>
             <div>
             <h1 className='text-[#29384E]   font-medium'>Unlimited Hosting</h1>
@@ -49,7 +51,9 @@ const HumbergerX = () => {
           <div className='mt-3.5 '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-cloud-hosting-1658221728.webp" 
+                
+                />
             </div>
             <div>
             <h1 className='text-[#29384E]  font-medium'>Cloud Hosting</h1>
@@ -62,7 +66,7 @@ const HumbergerX = () => {
           <div className='mt-3.5  '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-wordpress-hosting-1658222020.webp" />
             </div>
             <div>
             <h1 className='text-[#29384E]  font-medium'>WordPress Hosting</h1>
@@ -75,7 +79,7 @@ const HumbergerX = () => {
           <div className='mt-3.5 '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-simple-wordpress-1658221879.webp"/>
             </div>
             <div>
             <h1 className='text-[#29384E]  font-medium'>Simple WordPress</h1>
@@ -88,7 +92,7 @@ const HumbergerX = () => {
           <div className='mt-3.5 '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-email-hosting-1658221842.webp"   />
             </div>
             <div>
             <h1 className='text-[#29384E]  font-medium'>Email Hosting</h1>
@@ -101,7 +105,7 @@ const HumbergerX = () => {
           <div className='mt-3.5 pb-8 '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-transfer-hosting-1658221924.webp"   />
             </div>
             <div>
             <h1 className='text-[#29384E] font-medium'>Transfer Hosting</h1>
@@ -138,7 +142,7 @@ const HumbergerX = () => {
           <div className='mt-8 '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="50px" height="50px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp"/>
             </div>
             <div>
             <h1 className='text-black text-lg  font-medium'>Cloud VPS KVM</h1>
@@ -150,7 +154,7 @@ const HumbergerX = () => {
           <div className='mt-3.5 '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-cloud-hosting-1658221728.webp"  />
             </div>
             <div>
             <h1 className='text-[#29384E] font-medium'>Cloud VPS Hosting</h1>
@@ -163,7 +167,7 @@ const HumbergerX = () => {
           <div className='mt-3.5  '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-wordpress-hosting-1658222020.webp"   />
             </div>
             <div>
             <h1 className='text-[#29384E] font-medium'>CyberPanel VPS Hosting</h1>
@@ -176,7 +180,7 @@ const HumbergerX = () => {
           <div className='mt-3.5 pb-8'>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-simple-wordpress-1658221879.webp"/>
             </div>
             <div>
             <h1 className='text-[#29384E]  font-medium'>VPS cPanel</h1>
@@ -213,7 +217,7 @@ const HumbergerX = () => {
           <div className='mt-8 cursor-pointer '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp"  />
             </div>
             <div>
             <h1 className='text-[#29384E] font-medium'>Cari Domain</h1>
@@ -225,7 +229,7 @@ const HumbergerX = () => {
           <div className='mt-3.5 cursor-pointer '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-cloud-hosting-1658221728.webp"  />
             </div>
             <div>
             <h1 className='text-[#29384E]  font-medium'>Domain ID</h1>
@@ -238,7 +242,7 @@ const HumbergerX = () => {
           <div className='mt-3.5  cursor-pointer'>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-wordpress-hosting-1658222020.webp"  />
             </div>
             <div>
             <h1 className='text-[#29384E] font-medium'>Check WHOIS</h1>
@@ -251,7 +255,7 @@ const HumbergerX = () => {
           <div className='mt-3.5 pb-8 cursor-pointer'>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-simple-wordpress-1658221879.webp"  />
             </div>
             <div>
             <h1 className='text-[#29384E] font-medium'>Transfer Domain</h1>
@@ -289,7 +293,7 @@ const HumbergerX = () => {
           <div className='mt-8 '>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp"   />
             </div>
             <div>
             <h1 className='text-[#29384E] font-medium'>Website Instan</h1>
@@ -301,7 +305,7 @@ const HumbergerX = () => {
           <div className='mt-3.5 pb-8'>
           <div className='flex items-center gap-4'>
             <div>
-                <Image src={Cloud} width="45px" height="45px"  />
+                <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-cloud-hosting-1658221728.webp"  />
             </div>
             <div>
             <h1 className='text-[#29384E] font-medium'>Jasa Pembuatan Website</h1>
