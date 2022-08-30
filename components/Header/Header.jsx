@@ -125,7 +125,7 @@ const Header = () => {
     enterTo="translate-y-50"
     leave="transition ease-in-out duration-500 transform"
     leaveFrom="translate-y-0"
-    leaveTo="-translate-y-full opacity-0"
+    leaveTo="-translate-y-full opacity-0 duration-500 transform"
     className={` xl:hidden`}>
         {/* <HumbergerX/> */}
         <HumbergerXRevisi/>
