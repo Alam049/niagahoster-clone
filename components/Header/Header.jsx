@@ -24,7 +24,8 @@ const Header = () => {
         
    <div className='bg-[#c52544] '>
    
-    {enabled ?<div className='bg-[#f5faff] xl:bg-[#c52544] white lg:pt-5 xl:pt-4'>
+  
+   {enabled ?<div className='bg-[#f5faff] xl:bg-[#c52544] white lg:pt-5 xl:pt-4'>
 
 <div className='sm:flex  md:pt-3  sm:justify-between md:pr-5 pt-2 sm:pr-5 sm:pb-5 lg:pb-0 xl:pt-0' >
  <div className=' md:pt-4 pl-4 md:pl-3 lg:pl-[170px] xl:flex xl:pl-10 xl:gap-[120px] xl:pb-[60px]'>
@@ -96,7 +97,9 @@ const Header = () => {
  </div>
  
  </div>
+ 
  </div>}
+  
    
 
    
@@ -122,7 +125,7 @@ const Header = () => {
     enterTo="translate-y-50"
     leave="transition ease-in-out duration-500 transform"
     leaveFrom="translate-y-0"
-    leaveTo="-translate-y-full"
+    leaveTo="-translate-y-full opacity-0"
     className={` xl:hidden`}>
         {/* <HumbergerX/> */}
         <HumbergerXRevisi/>

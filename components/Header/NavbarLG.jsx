@@ -9,9 +9,10 @@ const NavbarLG = () => {
   return (
     <div className='flex gap-[50px] mx-[60px] 2xl:mx-0 2xl:ml-[140px] 3xl:ml-[280px] xl:mx-0 xl:pl-5 '>
         <div className=''>
-        <button className='peer text-white font-semibold ' >Hosting</button>
-        <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] absolute'></div>
-            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2 duration-300  '>
+        <button className='peer pb-4 text-white font-semibold ' >Hosting</button>
+        <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] top-[50px] absolute'></div>
+        <div className=' hidden peer-hover:block segitiga absolute z-10 top-[58px] left-[450px] '></div>
+            <div className=' hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-xl px bg-white  absolute z-10 px-4 pt-8 pb-2 duration-300  '>
                 
            <div className='flex gap-5 mb-5 hover:bg-gray-200 py-2 pl-4  rounded-lg'>
            <div>
@@ -72,9 +73,10 @@ const NavbarLG = () => {
             </div>
         
         </div>
-        <div><a className='peer text-white font-semibold ' href="">VPS</a>
-        <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-7 h-[0.8px] absolute '></div>
-            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
+        <div><button className='peer pb-4 text-white font-semibold ' href="">VPS</button>
+        <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-7 h-[0.8px] absolute top-[50px]'></div>
+        <div className=' hidden peer-hover:block segitiga absolute z-10 top-[58px] left-[545px] '></div>
+            <div className=' hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
            <div className='flex gap-5 mb-5 hover:bg-gray-200 py-2 pl-4  rounded-lg'>
            <div>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp" />
@@ -118,9 +120,10 @@ const NavbarLG = () => {
        
         </div>
         <div>
-        <a className='peer text-white font-semibold ' href="">Domain</a>
-        <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] absolute'></div>
-            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
+        <button className='peer pb-4 text-white font-semibold ' href="">Domain</button>
+        <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] top-[50px] absolute'></div>
+        <div className=' hidden peer-hover:block segitiga absolute z-10 top-[58px] left-[630px] '></div>
+            <div className=' hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
            <div className='flex gap-5 mb-5 hover:bg-gray-200 py-2 pl-4  rounded-lg'>
            <div>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp" />
@@ -163,9 +166,11 @@ const NavbarLG = () => {
             </div>
         </div>
         <div>
-        <a className='peer text-white font-semibold ' href="">Website</a>
-        <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] absolute'></div>
-            <div className='hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
+        <button className='peer pb-4 text-white font-semibold ' href="">Website</button>
+        <div className=' hidden peer-hover:block mt-[2.5px] bg-white w-[57px] h-[0.8px] absolute top-[50px]'></div>
+        
+        <div className=' hidden peer-hover:block segitiga absolute z-10 top-[58px] left-[735px] '></div>
+            <div className=' hidden peer-hover:flex hover:flex flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
            <div className='flex gap-5 mb-5 hover:bg-gray-200 py-2 pl-4  rounded-lg'>
            <div>
                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/menu-unlimited-hosting-1658221943.webp" />

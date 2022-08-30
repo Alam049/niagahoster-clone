@@ -48,7 +48,7 @@ const TestimoniItem = ({testimoniData, active, onToggle}) => {
            <div className='pt-2'>
            <div className='h-[1px] bg-slate-200  px-5'></div>
            </div>
-               <p className='text-[#546071] pt-5'>{desc}</p>
+               <p className='text-[#546071] pt-5 '>{desc}</p>
            </div>
            </li>
            </div>

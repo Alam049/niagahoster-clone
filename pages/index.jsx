@@ -18,7 +18,7 @@ const Home = () => {
       </Head>
       <Header />
       <Domain/>
-      <Layanan/>
+      {/* <Layanan/> */}
       <Product/>
       <Iklan/>
       <Desc/>

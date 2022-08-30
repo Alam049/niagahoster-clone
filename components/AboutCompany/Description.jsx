@@ -41,12 +41,12 @@ const Description = () => {
             <h1 className='text-center text-xl px-[50px] mt-8 font-semibold md:mt-8 md:px-10 lg:px-[120px] lg:mt-0 xl:mt-5 xl:px-10 text-[#29384E] '>Muhammad Arief Widyananda - Managing Director PT Krafthaus Indonesia</h1>
         </div>) || (enabled === 'fabian' &&  <div className=''>
             <div className='text-center px-5'>
-            <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/www/assets/images/2021/arunika/testimony/sate-ratu.webp" className="object-contain  rounded-2xl block mr-auto ml-auto lg:w-[1350px] lg:pr-[90px]"  />
+            <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/www/assets/images/2021/arunika/testimony/sate-ratu.webp" className="object-contain  rounded-2xl block mr-auto ml-auto lg:w-[1150px] "  />
             </div>
             <h1 className='text-center text-xl px-[50px] mt-8 font-semibold md:mt-8 md:px-10 lg:mr-[80px] text-[#29384E]'>Fabian Budi Seputro - Owner Sate Ratu</h1>
         </div>) || (enabled === "habib" && <div className=''>
             <div className='text-center px-5'>
-            <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/www/assets/images/2021/arunika/testimony/uwitan.webp" className="object-contain  rounded-2xl block mr-auto ml-auto lg:w-[1350px] lg:pr-[90px]"  />
+            <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/www/assets/images/2021/arunika/testimony/uwitan.webp" className="object-contain  rounded-2xl block mr-auto ml-auto lg:w-[1350px] "  />
             </div>
             <h1 className='text-center text-xl px-[50px] mt-8 font-semibold md:mt-8 md:px-10 lg:mr-[80px]  text-[#29384E]'>Habib Hidayat Tullah - CTO Uwitan</h1>
         </div> )}
@@ -55,22 +55,22 @@ const Description = () => {
         </div>
        
         
-      <div className='mt-[150px] ml-5 bg-[#f5faff] md:grid md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center pb-[80px] 3xl:px-[200px] 4xl:px-[350px]'>
+      <div className='mt-[150px] ml-5 bg-[#f5faff] md:grid md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center pb-[80px] md:pb-0 3xl:px-[200px] 4xl:px-[350px]'>
         <div onClick={() => setEnabled('muhammad')} className='cursor-pointer' >
         <h1 className='text-2xl font-semibold' >Muhammad Arief Widyananda</h1>
-        <a href='' className='text-slate-600' >Managing Director PT Krafthaus Indonesia</a>
+        <p href='' className='text-slate-600' >Managing Director PT Krafthaus Indonesia</p>
         <div className={`pt-5 ${enabled !== "fabian" && "hidden"}`} ></div>
         <div className={`border-10 bg-slate-700 w-[335px] h-[2px] mt-4 md:mt-6 ${enabled !== "muhammad" && "hidden"}`}></div>
         </div>
         
         <div onClick={() => setEnabled('habib')}  className='cursor-pointer' >
         <h1 className='text-2xl font-semibold text-[#535961] mt-8 md:mt-0  hover:text-slate-700 ease-in duration-100'>Habib Hidayat Tullah</h1>
-        <a href='' className='text-[#535961]' >CTO Uwitan</a>
+        <p href='' className='text-[#535961]' >CTO Uwitan</p>
         <div className={`border-10 bg-slate-700 w-[335px] h-[2px] mt-4 md:mt-6 md:w-[225px] lg:w-[270px] ${enabled !== "habib" && "hidden"}`}></div>
         </div>
         <div onClick={() => setEnabled('fabian')} className='cursor-pointer' >
         <h1 className='text-2xl font-semibold text-[#535961]  mt-10 md:mt-0 hover:text-slate-700 ease-in duration-100 '>Fabian Budi Seputro</h1>
-        <a href="" className='text-[#535961]' >Owner Sate Ratu</a>
+        <p href="" className='text-[#535961]' >Owner Sate Ratu</p>
         <div className={`border-10 bg-slate-700 w-[335px] h-[2px] mt-4 md:mt-6 md:w-[525px] lg:w-[290px] ${enabled !== "fabian" && "hidden"}`}></div>
         </div>
       </div>

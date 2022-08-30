@@ -14,3 +14,45 @@
 .answer_wrapper {
   transition: height ease 400ms;
 }
+
+.segitiga-kiri {
+  width: 0;
+  height: 0;
+
+  border-top: 16.8px solid transparent;
+  border-bottom: 16.8px solid transparent;
+
+  border-left: 16.8px solid #f43636;
+}
+.segitiga-kiri-2 {
+  width: 0;
+  height: 0;
+
+  border-top: 16.8px solid transparent;
+  border-bottom: 16.8px solid transparent;
+
+  border-left: 16.8px solid #00bfa6;
+}
+
+.segitiga {
+  height: 0px;
+  width: 0px;
+  border-bottom: solid 15px white;
+  border-left: solid 15px #c52544;
+  border-right: solid 15px #c52544;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.inactive {
+  background-color: #9b59b6;
+}
+
+.active {
+  background-color: #3498db;
+}
