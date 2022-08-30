@@ -143,7 +143,7 @@ const Header = () => {
     <TimerPromo setTimePromo={setTimePromo} />
         {/* btn */}
         <div className='md:pl-10 ml-4 md:ml-0 lg:ml-0 pt-10 xl:pl-8'>
-        <button className='bg-[#ff9800] text-white rounded-3xl py-4 px-9 font-bold text-sm mb-[60px] hover:bg-orange-500 ease-in duration-[400ms] shadow-sm shadow-white md:px-9'>
+        <button className='bg-[#ff9800] text-white rounded-3xl py-4 px-9 font-bold text-sm mb-[60px] hover:bg-orange-500 ease-in duration-[400ms] shadow-sm  md:px-9'>
             Lihat Penawaran
         </button>
         </div>
