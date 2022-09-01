@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        'max-height': 'max-height',
+        'ANIMATION_DURATION': '2000ms'
+      },
       screens: {
         'sm': '512px',
         'cs': '577px',

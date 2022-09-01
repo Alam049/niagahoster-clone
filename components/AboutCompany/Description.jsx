@@ -55,8 +55,8 @@ const Description = () => {
         </div>
        
         
-      <div className='mt-[150px] ml-5 bg-[#f5faff] md:grid md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center pb-[80px] md:pb-0 3xl:px-[200px] 4xl:px-[350px]'>
-        <div onClick={() => setEnabled('muhammad')} className='cursor-pointer' >
+      <div className='mt-[150px] ml-5 bg-[#f5faff] md:grid md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center pb-[60px] md:pb-0  3xl:px-[200px] 4xl:px-[350px]'>
+        <div onClick={() => setEnabled('muhammad')} className='cursor-pointer md:pb-10 lg:pb-0' >
         <h1 className='text-2xl font-semibold' >Muhammad Arief Widyananda</h1>
         <p href='' className='text-slate-600' >Managing Director PT Krafthaus Indonesia</p>
         <div className={`pt-5 ${enabled !== "fabian" && "hidden"}`} ></div>

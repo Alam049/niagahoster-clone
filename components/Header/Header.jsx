@@ -12,6 +12,17 @@ import NavbarLG from "./NavbarLG"
 import TimerPromo from "./TimerPromo"
 import { Transition } from "@headlessui/react"
 import HumbergerXRevisi from './HumbergerXRevisi'
+import HeaderNavbar from './HeaderNavbar'
+
+
+
+// show={enabled}
+//     enter="transition ease-in-out duration-1000 transform"
+//     enterFrom="-translate-y-full"
+//     enterTo="translate-y-50"
+//     leave="transition ease-in-out duration-1000 transform"
+//     leaveFrom="translate-y-0"
+//     leaveTo="-translate-y-full"
 
 
 const Header = () => {
@@ -23,9 +34,109 @@ const Header = () => {
     <div className=''>
         
    <div className='bg-[#c52544] '>
+
    
-  
-   {enabled ?<div className='bg-[#f5faff] xl:bg-[#c52544] white lg:pt-5 xl:pt-4'>
+ 
+   
+{/* 
+    <HeaderNavbar/> */}
+   
+    {/* <div
+   
+   className={`  transition-all duration-700 ease-in-out  bg-[#f5faff] xl:bg-[#c52544] white lg:pt-5 xl:pt-4`}
+    
+    >
+    <div className='sm:flex  md:pt-3  sm:justify-between md:pr-5 pt-2 sm:pr-5 sm:pb-5 lg:pb-0 xl:pt-0' >
+        <div className=' md:pt-4 pl-4 md:pl-3 lg:pl-[170px] xl:flex xl:pl-10 xl:gap-[120px] xl:pb-[60px]'>
+    <div className=''>
+     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-blue-1659527664.svg" alt="mainlogo" className="hidden md:block xl:hidden"
+      />
+     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-blue-small-1659527703.svg" alt="mainlogo" className=" md:hidden"
+      />
+      <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-1659527365.svg" alt="mainlogo" className="hidden xl:block "
+      />
+ </div>
+ <div className='hidden md:hidden lg:hidden xl:block '>
+    <NavbarLG/>
+ </div>
+</div>
+<div>
+<div className='flex items-center gap-3 pl-4 lg:pr-[150px] xl:pr-5  md:pt-1'>
+<MdOutlineShoppingCart  className='text-2xl text-blue-500 xl:text-white  cursor-pointer' />
+<button className='text-blue-500 font-bold rounded-3xl border py-[7px] pb-[9px] xl:border-white xl:text-white px-7 hover:bg-[#ff9800] text-sm ease-in duration-[400ms] md:py-2 md:px-8 border-blue-500 sm:py-[9px] sm:px-8'>
+ Login
+</button>
+
+ <div className=' xl:hidden' onClick={()=> setEnabled(!enabled)} >
+ {enabled ? 
+ <BsXLg className='cursor-pointer rounded-full border p-3 text-blue-500 border-blue-500 text-5xl ' />  : 
+ <AiOutlineMenu className='cursor-pointer rounded-full border p-4 text-blue-500 border-blue-500 text-5xl ' /> }
+ 
+ </div>
+
+</div>
+
+
+</div>
+
+</div>
+</div>  */}
+
+  <div className={` hidden xl:block red transition-all duration-300 ease-in-out delay-[660ms] `}>  
+        <div className='sm:flex md:pt-5 lg:px-[150px] sm:justify-between sm:pr-5 pt-2  xl:px-10 xl:pt-3 ' >
+             <div className=' pl-4 md:pl-3 md:pt-4 lg:flex lg:gap-[100px]  '>
+                 <div className=''>
+                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-1659527365.svg" alt="mainlogo" className="hidden md:block"
+                      />
+                     <img src=" https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-small-1659527392.svg" alt="mainlogo" className="md:hidden"
+                      />
+                      
+                     
+                 </div>
+                 <div className='hidden md:hidden lg:hidden xl:block '>
+                    <NavbarLG/>
+                 </div>
+             </div>
+             <div>
+             <div className='flex items-center gap-4 pl-4 lg:pr-5 md:pt-0 xl:pr-2 xl:pl-0 xl:pt-2'>
+             <MdOutlineShoppingCart  className='text-[22px] text-white cursor-pointer mt-2 lg:mt-4 xl:mt-2' />
+             <button className='text-white font-bold rounded-3xl border py-[7px] pb-[9px] px-7 hover:bg-[#ff9800] ease-in text-sm duration-[400ms] md:py-2 md:px-8 sm:py-[9px] sm:px-8 '>
+                 Login
+             </button>
+             
+                 <div className='xl:hidden sm:mt-1' onClick={()=> setEnabled(!enabled)} >
+                 {enabled ? 
+                 <BsXLg className='cursor-pointer rounded-full border p-4 text-white text-5xl ' />  : 
+                 <AiOutlineMenu className='cursor-pointer rounded-full border p-2 text-white text-5xl ' /> }
+                 
+                 </div>
+             
+             </div>
+             
+            
+             </div>
+             
+             </div>
+             
+    </div> 
+
+    
+   
+
+   
+
+
+{/* Headless UI Transition but is not 100% working for my logic problem (noted) */}
+{/* <Transition
+    show={enabled}
+    enter="transition ease-in-out duration-1000 transform"
+    enterFrom="-translate-y-full"
+    enterTo="translate-y-50"
+    leave="transition ease-in-out duration-1000 transform"
+    leaveFrom="translate-y-0"
+    leaveTo="-translate-y-full"
+    
+    className='bg-[#f5faff] xl:bg-[#c52544] white lg:pt-5 xl:pt-4 transition-height ease-in-out duration-500 '>
 
 <div className='sm:flex  md:pt-3  sm:justify-between md:pr-5 pt-2 sm:pr-5 sm:pb-5 lg:pb-0 xl:pt-0' >
  <div className=' md:pt-4 pl-4 md:pl-3 lg:pl-[170px] xl:flex xl:pl-10 xl:gap-[120px] xl:pb-[60px]'>
@@ -61,75 +172,88 @@ const Header = () => {
  </div>
  
  </div>
-</div>   : <div className=' red'>
+</Transition> 
 
-<div className='sm:flex md:pt-5 lg:px-[150px] sm:justify-between sm:pr-5 pt-2  xl:px-10 xl:pt-3 ' >
- <div className=' pl-4 md:pl-3 md:pt-4 lg:flex lg:gap-[100px]  '>
-     <div className=''>
-         <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-1659527365.svg" alt="mainlogo" className="hidden md:block"
-          />
-         <img src=" https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-small-1659527392.svg" alt="mainlogo" className="md:hidden"
-          />
-          
-         
-     </div>
-     <div className='hidden md:hidden lg:hidden xl:block '>
-        <NavbarLG/>
-     </div>
- </div>
- <div>
- <div className='flex items-center gap-4 pl-4 lg:pr-5 md:pt-0 xl:pr-2 xl:pl-0 xl:pt-2'>
- <MdOutlineShoppingCart  className='text-[22px] text-white cursor-pointer mt-2 lg:mt-4 xl:mt-2' />
- <button className='text-white font-bold rounded-3xl border py-[7px] pb-[9px] px-7 hover:bg-[#ff9800] ease-in text-sm duration-[400ms] md:py-2 md:px-8 sm:py-[9px] sm:px-8 '>
-     Login
- </button>
- 
-     <div className='xl:hidden sm:mt-1' onClick={()=> setEnabled(!enabled)} >
-     {enabled ? 
-     <BsXLg className='cursor-pointer rounded-full border p-4 text-white text-5xl ' />  : 
-     <AiOutlineMenu className='cursor-pointer rounded-full border p-2 text-white text-5xl ' /> }
-     
-     </div>
- 
- </div>
- 
+<Transition
+show={!enabled}
+enter="transition ease-in-out duration-1000 transform"
+enterFrom="-translate-y-full"
+enterTo="translate-y-50"
+leave="transition ease-in-out duration-1000 transform"
+leaveFrom="translate-y-0"
+leaveTo="-translate-y-full"
+            
+            className=' red  transition-all ease-in-out duration-500 '>
+            
+            <div className='sm:flex md:pt-5 lg:px-[150px] sm:justify-between sm:pr-5 pt-2  xl:px-10 xl:pt-3 ' >
+             <div className=' pl-4 md:pl-3 md:pt-4 lg:flex lg:gap-[100px]  '>
+                 <div className=''>
+                     <img src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-1659527365.svg" alt="mainlogo" className="hidden md:block"
+                      />
+                     <img src=" https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-small-1659527392.svg" alt="mainlogo" className="md:hidden"
+                      />
+                      
+                     
+                 </div>
+                 <div className='hidden md:hidden lg:hidden xl:block '>
+                    <NavbarLG/>
+                 </div>
+             </div>
+             <div>
+             <div className='flex items-center gap-4 pl-4 lg:pr-5 md:pt-0 xl:pr-2 xl:pl-0 xl:pt-2'>
+             <MdOutlineShoppingCart  className='text-[22px] text-white cursor-pointer mt-2 lg:mt-4 xl:mt-2' />
+             <button className='text-white font-bold rounded-3xl border py-[7px] pb-[9px] px-7 hover:bg-[#ff9800] ease-in text-sm duration-[400ms] md:py-2 md:px-8 sm:py-[9px] sm:px-8 '>
+                 Login
+             </button>
+             
+                 <div className='xl:hidden sm:mt-1' onClick={()=> setEnabled(!enabled)} >
+                 {enabled ? 
+                 <BsXLg className='cursor-pointer rounded-full border p-4 text-white text-5xl ' />  : 
+                 <AiOutlineMenu className='cursor-pointer rounded-full border p-2 text-white text-5xl ' /> }
+                 
+                 </div>
+             
+             </div>
+             
+            
+             </div>
+             
+             </div>
+             
+</Transition>   */}
 
- </div>
+    
+  
  
- </div>
- 
- </div>}
   
    
 
    
 
 
-    {/* <Transition
-    show={enabled}
-    enter="transition-opacity duration-500"
-    enterFrom="opacity-0"
-    enterTo="opacity-100"
-    leave="transition-opacity duration-150"
-    leaveFrom="opacity-100"
-    leaveTo="opacity-0"
+    {/* <div
+    
     className={` xl:hidden  ${!enabled && "hidden"}`}>
         <HumbergerX/>
-    </Transition> */}
+    </div> */}
 
 
-    <Transition
+    {/* <Transition
     show={enabled}
     enter="transition ease-in-out duration-500 transform"
     enterFrom="-translate-y-full"
     enterTo="translate-y-50"
     leave="transition ease-in-out duration-500 transform"
     leaveFrom="translate-y-0"
-    leaveTo="-translate-y-full opacity-0 duration-500 transform"
-    className={` xl:hidden`}>
-        {/* <HumbergerX/> */}
+    leaveTo="-translate-y-full"
+    className={` xl:hidden  `}> 
+        
+
+
+
+        
         <HumbergerXRevisi/>
-    </Transition>
+      </Transition>  */}
 
 
 

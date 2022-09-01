@@ -13,7 +13,9 @@ const HumbergerX = () => {
     const [enabled4,setEnabled4] = useState(false)
 
   return (
-    <div className=' '>
+    <div
+    
+    className=' '>
         <div className='bg-[#f5faff] xl:bg-[#c52544] w-full'>
          <div className='flex items-center justify-between pr-5 pb-1'>
          <h3 className='font-bold text-lg text-slate-600 pl-5 '>Hosting</h3>

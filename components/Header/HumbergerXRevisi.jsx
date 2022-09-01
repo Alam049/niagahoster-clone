@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import HumbergerItem from './HumbergerItem'
 import IconBar from './IconBar'
 import Link from 'next/link'
@@ -107,10 +107,11 @@ const data = [
     
 ]
 
-const HumbergerXRevisi = () => {
+const HumbergerXRevisi = ({enabled}) => {
 
     const [clicked, setClicked] = useState('0')
 
+    const contentAnimation = useRef()
 
         const handleToggle = (id) => {
             if (clicked === id) {
@@ -122,8 +123,8 @@ const HumbergerXRevisi = () => {
 
 
   return (
-    <div>
-        <ul className=''>
+    <div className={` ${enabled ? 'active' : ""}`}>
+        <ul  ref={contentAnimation} className={`answer_wrapper h-0 overflow-hidden ${enabled ? 'open' : ""}  `} style={ enabled ? {height: contentAnimation.current.scrollHeight} : {height: "0px"}} >
             {data.map((humbergerData, id) => (
                 <HumbergerItem key={id} humbergerData={humbergerData} onToggle={() => handleToggle(id)} 
                 active={clicked === id}
