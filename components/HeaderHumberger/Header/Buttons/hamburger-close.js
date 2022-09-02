@@ -6,7 +6,7 @@ export function HamburgerCloseButton({
   onClick: onClickFromParent,
 }) {
   const [isOpenDelayed, setIsOpenDelayed] = useState(isOpenFromParent);
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full transition ease transform ${ANIMATION_DURATION_CLASS}`;
+  const genericHamburgerLine = `h-[2px] w-6 my-1 rounded-full transition ease transform ${ANIMATION_DURATION_CLASS}`;
 
   useEffect(() => {
     setTimeout(() => setIsOpenDelayed(isOpenFromParent), 500)
@@ -26,8 +26,8 @@ export function HamburgerCloseButton({
       <div
         className={`${genericHamburgerLine} ${
           isOpenDelayed || isOpenFromParent
-            ? "rotate-45 translate-y-3 group-hover:opacity-100"
-            : "group-hover:opacity-100 translate-y-1 bg-white"
+            ? "rotate-45 translate-y-2 group-hover:opacity-100 "
+            : "group-hover:opacity-100 translate-y-1 bg-white "
         } ${isOpenFromParent && "bg-[#007aff] border-[#007aff]"}`}
       />
       <div
