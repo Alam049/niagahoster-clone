@@ -80,8 +80,7 @@ const NavbarLG = () => {
         <button className='peer pb-4 text-white font-semibold ' href="">VPS</button>
        <div className='hidden peer-hover:block hover:flex'>
        <div className='  mt-[2.5px] bg-white w-7 h-[0.8px] absolute top-[50px]'></div>
-        <div className=' segitiga absolute z-10 top-[58px] left-[545px] 2xl:left-[680px] 3xl:left-[82
-            0px] '></div>
+        <div className=' segitiga absolute z-10 top-[58px] left-[545px] 2xl:left-[680px] 3xl:left-[820px] '></div>
             <div className=' peer-hover:flex  flex-col w-[370px] rounded-lg px bg-white  absolute z-10 px-4 pt-8 pb-2  '>
            <div className='flex gap-5 mb-5 hover:bg-gray-200 py-2 pl-4  rounded-lg'>
            <div>
