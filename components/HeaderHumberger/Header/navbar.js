@@ -17,7 +17,7 @@ export function Navbar({ onToggleClick, isExpanded: isExpandedFromParent }) {
 
   return (
     <div
-      className={`${
+      className={`  ${
         whiteBackground || "bg-[#f5faff]"
       }  px-4 pt-2 pb-1 flex items-center justify-between lg:justify-around `}
     >

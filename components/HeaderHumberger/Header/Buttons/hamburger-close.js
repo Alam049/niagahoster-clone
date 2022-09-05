@@ -9,7 +9,7 @@ export function HamburgerCloseButton({
   const genericHamburgerLine = `h-[2px] w-6 my-1 rounded-full transition ease transform ${ANIMATION_DURATION_CLASS}`;
 
   useEffect(() => {
-    setTimeout(() => setIsOpenDelayed(isOpenFromParent), 500)
+    setTimeout(() => setIsOpenDelayed(isOpenFromParent), 0)
   }, [isOpenFromParent])
 
   function handleClick() {

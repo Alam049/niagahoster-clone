@@ -6,8 +6,8 @@ import { Navbar } from "./navbar";
 import { navItems, socialMediaLinks } from "./data";
 import { SocialMediaLink } from "./Buttons/social-media";
 
-export const ANIMATION_DURATION = 700
-export const ANIMATION_DURATION_CLASS = 'duration-[700ms]'
+export const ANIMATION_DURATION = 500
+export const ANIMATION_DURATION_CLASS = 'duration-[500ms]'
 
 export function Header() {
   const [isExpanded, toggleExpand] = useReducer((_) => !_, false);
@@ -41,7 +41,7 @@ export function Header() {
       <Navbar isExpanded={isExpanded} onToggleClick={toggleExpand} />
 
       <nav
-        className={`${genericAccordionStyle} 
+        className={` bg-[#f5faff] ${genericAccordionStyle} 
         ${isExpandedDelay && isExpanded ? "max-h-[100rem]" : "max-h-0"} 
         ${whiteBackground && "bg-[#f5faff]"}`}
       >
