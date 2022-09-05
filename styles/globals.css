@@ -32,19 +32,19 @@ a {
   width: 0;
   height: 0;
 
-  border-top: 16.8px solid transparent;
-  border-bottom: 16.8px solid transparent;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
 
-  border-left: 16.8px solid #f43636;
+  border-left: 16px solid #f43636;
 }
 .segitiga-kiri-2 {
   width: 0;
   height: 0;
 
-  border-top: 16.8px solid transparent;
-  border-bottom: 16.8px solid transparent;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
 
-  border-left: 16.8px solid #00bfa6;
+  border-left: 16px solid #00bfa6;
 }
 
 .segitiga {

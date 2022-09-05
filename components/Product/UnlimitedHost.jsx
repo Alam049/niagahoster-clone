@@ -65,19 +65,19 @@ const paket = [
 
 const UnlimitedHost = () => {
   return (
-    <div className='px-10 pt-10 md:px-[60px] md:grid md:grid-cols-2 gap-6 lg:grid-cols-4 lg:px-[60px] 2xl:px-[170px] 3xl:px-[320px] 4xl:px-[400px]'>
+    <div className='px-10 pt-10 md:px-[60px] md:grid md:grid-cols-2 gap-6 lg:grid-cols-4 lg:px-[60px] 2xl:px-[170px] 3xl:px-[320px] 4xl:px-[400px] '>
       {paket.map(({id,title,standart,paket,price,bonus,desc1,desc2,desc3,desc4,desc5,discount}) => {
         return (
           <div key={id}>
-            {(id === 3 && <div  className='border-[2px] border-[#FF9800] shadow-md shadow-slate-200  mt-8 md:mt-0 rounded-xl '>
-              <h1 className='bg-[#FF9800] text-white rounded-t-lg text-center py-3.5 text-2xl font-semibold lg:text-lg '>Penawaran Terbaik!</h1>
+            {(id === 3 && <div  className='border-[2px] border-[#FF9800] shadow-md shadow-slate-200  mt-8 md:mt-0 rounded-xl bg-[#FF9800] overflow-hidden'>
+              <h1 className=' text-white rounded-t-lg text-center py-3.5 text-2xl font-semibold lg:text-lg '>Penawaran Terbaik!</h1>
            
-           <div className='px-5 pt-5'>
+           <div className='px-5 pt-5 bg-white'>
            <h1 className='font-semibold text-lg text-[#3A4166]'>{title}</h1>
            <h5 className='text-[#535961] text-sm pt-5'>{standart}</h5>
              
-             {(paket === 'Diskon 75%' && <div className=' pt-8  flex items-center gap-8 lg:flex-col lg:items-start lg:gap-4 xl:flex-row xl:items-center xl:gap-6 relative '><h1 className='bg-[#f43636] rounded-l-md text-white pl-2 py-2 text-xs font-semibold pr-4'>{paket}</h1><div className='absolute
-             left-[88.5px] top-[31.5px] segitiga-kiri md:left-[88px] 
+             {(paket === 'Diskon 75%' && <div className=' pt-8  flex items-center gap-8 lg:flex-col lg:items-start lg:gap-4 xl:flex-row xl:items-center xl:gap-6 relative '><h1 className='bg-[#f43636] rounded-r-sm rounded-l-md text-white pl-2 py-2 text-xs font-semibold pr-[17px]'>{paket}</h1><div className='absolute
+             left-[89px] top-[32.3px] segitiga-kiri  
              '></div><p className='text-sm text-[#3a4166] font-semibold line-through'>{discount}</p></div> ) || (paket ? <div className=' pt-8'><h1 className='rounded-l-md text-white pl-2 py-2 text-xs font-semibold  '>{paket}</h1></div> : '' )}
              
    
@@ -123,9 +123,9 @@ const UnlimitedHost = () => {
              <div className=' pt-8'>
              {(paket === 'Diskon 75%' && <h1 className='bg-[#f43636] rounded-l-md text-white pl-2 py-2 text-xs font-semibold '>{paket}</h1> ) || (paket ? <div className='flex items-center gap-8 lg:gap-4 lg:flex-col lg:items-start xl:flex-row xl:items-center xl:gap-7 relative
              '>
-              <h1 className='bg-[#00bfa6] rounded-l-md text-white pl-2 py-2 text-xs font-semibold px-5 '>{paket}</h1>{
-                (paket === 'Termurah' && <div className='absolute left-[79.2px]  segitiga-kiri-2 top-[-0.5px]'></div>) || (paket === 'Diskon 67%' && <div className='absolute left-[93px] segitiga-kiri-2 top-[-0.5px]
-                '></div> ) || (paket ? <div className='absolute left-[93px] segitiga-kiri-2 top-[-0.5px]'></div> : '')
+              <h1 className='bg-[#00bfa6] rounded-l-md rounded-r-sm text-white pl-2 py-2 text-xs font-semibold pr-[20.5px] '>{paket}</h1>{
+                (paket === 'Termurah' && <div className='absolute left-[79.2px]  segitiga-kiri-2 top-0'></div>) || (paket === 'Diskon 67%' && <div className='absolute left-[93px] segitiga-kiri-2 top-0
+                '></div> ) || (paket ? <div className='absolute left-[93px] segitiga-kiri-2 top-0'></div> : '')
               }
               <p className='text-sm text-[#3a4166] font-semibold line-through'>{discount}</p>
              </div> : '' )}
@@ -161,7 +161,7 @@ const UnlimitedHost = () => {
                </div>
              </div>
              <div className='h-[1px] bg-slate-200  '></div>
-             <div className='pt-4 pb-10
+             <div className='pt-4 pb-10 
              '>
                <h1 className='text-[#0062cc] text-base font-bold text-center '>Lihat Fitur Lengkap</h1>
              </div>
